@@ -1,5 +1,7 @@
 # Business Ideas Platform
 
+> **Status (Oct 2026):** planning scaffold only. The `web/`, `services/`, `infra/`, `design/` and `docs/` folders hold placeholder READMEs, and there is no `package.json`, Docker Compose file or service code yet, so the setup steps below describe the intended layout rather than something you can run today. `catalog/` holds a migrated product list.
+
 Welcome to the Business Ideas platform repository. This project aims to provide a collaborative space for generating, evaluating, and developing business ideas using modern web technologies and AI-driven microservices.
 
 ## Repository structure
@@ -9,6 +11,7 @@ Welcome to the Business Ideas platform repository. This project aims to provide 
 - **services/**: AI, data, and authentication microservices.
 - **web/**: Frontend application code.
 - **infra/**: Infrastructure-as-code scripts, GitHub Actions workflows, and deployment manifests.
+- **catalog/**: Product catalogs migrated from Drive (currently `50-promised-bonuses.md`).
 
 ## Architecture diagram
 
