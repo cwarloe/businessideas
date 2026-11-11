@@ -6,6 +6,8 @@ View: https://cwarloe.github.io/businessideas/oats-and-more/
 
 Interactive brand design studio: https://cwarloe.github.io/businessideas/oats-and-more/design-lab.html
 
+Published Boise market research and recommendations: https://cwarloe.github.io/businessideas/oats-and-more/research.html
+
 ## Research and business-development record (November 11, 2026)
 
 The [Oats, Etc. research archive](research/README.md) consolidates the work from concept discovery and live voting through the current oatmeal-only breakfast pilot direction. It distinguishes decisions from ideas and unresolved requirements. Read the five records:
