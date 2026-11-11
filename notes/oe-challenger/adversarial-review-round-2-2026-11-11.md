@@ -11,7 +11,7 @@ The plan moved from "sweet and savory grain-bowl restaurant" to "one hosted priv
 ## Credit where it holds (short, because it is earned)
 - The archive labels its own numbers as illustrative and says gross sales are not profit (pilot-and-equipment.md, research/README.md).
 - "No premature equipment purchase" and the decision gates in validation-backlog.md are the right shape.
-- The brand memo found a real conflict (an existing OATS & MORE cereal registration) and does not pretend the tagline "From first bite to last spoonful" is unique. I confirmed that the Dairy Queen 2019 press release uses that phrase. I could not open the Justia trademark page or the Central District Health page (both returned access errors to me), so I have not verified the trademark record or the fee figures. Treat those as the builder's claims until someone opens the pages.
+- The brand memo found a real conflict (an existing OATS & MORE cereal registration) and does not pretend the tagline "From first bite to last spoonful" is unique. I confirmed that the Dairy Queen 2019 press release uses that phrase. I could not open the Justia trademark page or the Central District Health page myself. Well Actually later opened both (read-only check, 2026-11-11) and confirmed the OATS & MORE serial 74633922, registration 2014432 (November 5, 1996), the TreeHouse Private Brands listing, and the Central District Health figures ($100 plan review, $80 and $100 mobile license). See the corrections section at the end for the trademark renewal caveat.
 - Savory lunch moved to Stage 3 behind a test. That settles my round 1 objection 3 by deferral.
 
 ## Status of my round 1 objections
@@ -37,7 +37,7 @@ Cheap test, zero spend: stand across from a candidate building entrance from 6:3
 Not researched anywhere in the archive: what nearby coffee shops, free office snacks and breakfast habits already compete for that same morning dollar. I have not researched it either.
 
 ### 2. The money model stops at gross sales, and at Stage 1 the gross is small
-Where: pilot-and-equipment.md table. I rechecked the arithmetic (bowls per day times ticket times days per week times 4.33) and it is correct.
+Where: pilot-and-equipment.md table. I rechecked the arithmetic (bowls per day times ticket times days per week times 4.33) and it is correct, except for a two-dollar slip in the Stage 3 low end, which should read $13,369, not $13,367.
 Stage 1 gross is $1,949 to $3,410 per month, which is about $450 to $790 per week for three mornings, before ingredients, packaging, payment fees, commissary, permits, insurance, any host fee, fuel and the operator's time. The archive says all of that is excluded. It does not yet estimate any of them, so nobody can say what Charles would keep per hour.
 Cheap test: one page. Put a cost on one bowl from a grocery receipt (oats, toppings, cup, lid, spoon, napkin). Then list weekly hours (prep, travel, setup, 3 hours of service, teardown, cleaning). Margin per bowl times bowls per week, minus fixed costs, divided by hours is the number that matters. Settles it: whether Stage 1 is a living, a side income, or a learning exercise. Charles should decide which of those he wants it to be before more research is done.
 
@@ -52,7 +52,7 @@ Why it could hurt: if there is no affordable approved kitchen, the plan has no l
 Cheap test: add "find and price an approved prep kitchen" to P0 and ask Central District Health the archive's own question 2 (can externally cooked oatmeal be transported to the warmers). Settles it: yes or no, plus a monthly cost.
 
 ### 5. The timeline to a legal first sale is longer than the plan implies, and one test step may be a problem
-Where: local-regulation.md says plan review should be submitted at least 30 days in advance, with notice at least 15 days before opening. From their own numbers, that is roughly a month and a half before any sale, possibly overlapping (I did not verify the overlap). That puts a first service around mid to late December at the earliest if work started today, and it is likely later.
+Where: local-regulation.md says plan review should be submitted at least 30 days in advance, with notice at least 15 days before opening. Per the Central District Health page and operational plan (confirmed by Well Actually), plan review must be submitted at least 30 days before opening, and the 15-day inspection notice runs after plan approval rather than stacking on top of the 30. So the earliest legal first sale is roughly 30 days or more from a complete submission, which means mid December at the earliest if work started today, and likely later.
 Separately, validation-backlog.md P1 suggests an "actual refundable preorder invitation" and "permitted morning service test." Whether taking preorders or money before the food license exists is allowed is not answered anywhere. This is a question, not a claim. It belongs with Central District Health and the Back Office bot before anyone is asked to pay.
 Cheap test: ask Central District Health whether a one-day trial needs the full license, and whether a free sampling day differs from a paid sale. Settles it: what can be tested before the 30-day wait.
 
@@ -81,3 +81,14 @@ Objection 1 combined with objection 6: two free mornings of counting people and 
 ## Questions for Charles
 - Is Stage 1 meant to be a living, side income, or an experiment you are happy to break even on? The answer changes how much the money model has to prove.
 - Do you have a specific building or two in mind yet? Even a rough one lets me size objection 1 properly.
+
+## Corrections after the fact-check (added 2026-11-11)
+
+Well Actually checked these notes read-only. Verdict: mostly fine, with nits. What changed in this file:
+
+1. The trademark and Central District Health facts I called unverified are now verified (see the top of this file).
+2. The Stage 3 low end is $13,369, not $13,367. My earlier statement that the arithmetic was fully correct was off by two dollars.
+3. The legal timeline now reflects that the 15-day notice does not stack on the 30-day plan review.
+4. New caveat on the OATS & MORE mark, from Well Actually's check of third-party records: Justia shows "Registered and Renewed" with a status date of November 18, 2015, and later event lists show a November 5, 2025 courtesy reminder for the next maintenance filing, an assignment-not-updated event on May 14, 2026, and no later maintenance filing. The ordinary window closed November 5, 2026. A grace period with surcharge typically runs to May 5, 2027. This is not a finding that the registration is dead, and official USPTO status (TSDR) could not be loaded by anyone, so it stays unverified. It does mean "Registered and Renewed" is a 2015 status line, and the last-listed owner should not be assumed to be the current owner or an authorized seller. It is relevant to the archive's idea of approaching the rights holder.
+
+Items in files I do not own (the builder's archive and the kitchen and office-market memo on main) are listed with exact replacement wording in suggested-fixes-for-builder-2026-11-11.md. I have not edited those files.
