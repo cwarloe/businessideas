@@ -1,4 +1,4 @@
-# Oats & More — voting service
+# Oats, Etc. — voting service
 
 Cloudflare Worker + D1 SQLite API modeled on Charles Fan Club's polling feature.
 It uses its own separate database, with no child or family data. The customer-facing
