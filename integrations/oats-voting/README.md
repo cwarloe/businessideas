@@ -11,13 +11,15 @@ https://cwarloe.github.io/businessideas/oats-and-more/.
 2. Run npx wrangler d1 create oats-and-more-votes.
 3. Copy the new database UUID into this folder's wrangler.toml.
 4. Make a random 32+ character ADMIN_TOKEN in a password manager.
-   Run npx wrangler secret put ADMIN_TOKEN, then paste the secret when prompted.
    Never commit the secret to GitHub.
 5. Run npx wrangler d1 execute oats-and-more-votes --remote --file=./schema.sql.
-6. Run npx wrangler deploy.
-7. Verify the deployed URL, e.g. https://YOUR-WORKER.workers.dev/api/health.
-8. Enter the Worker origin into docs/oats-and-more/vote-config.js (no trailing slash).
-   Do not switch the homepage form to live voting until the API poll is reachable.
+6. Run npx wrangler deploy (initially replies that configuration is incomplete).
+7. Run npx wrangler secret put ADMIN_TOKEN, then paste the secret when prompted.
+   This creates a new Worker version with the required secret.
+8. Verify the deployed URL, e.g. https://YOUR-WORKER.workers.dev/api/health,
+   and GET /api/polls/first-bowl before enabling website voting.
+9. Enter the Worker origin into docs/oats-and-more/vote-config.js (no trailing slash).
+   The GitHub Pages homepage will then submit real votes automatically.
 
 The separate admin dashboard at docs/oats-and-more/vote-admin.html can show
 tallies, create more polls, open/close polls, and download aggregate CSV counts.
