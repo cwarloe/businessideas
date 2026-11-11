@@ -1,4 +1,4 @@
-# Oats & More — Modern Comfort Kitchen
+# Oats, Etc. — Modern Comfort Kitchen
 
 A public concept-preview website for a potential sweet-and-savory grain-bowl business in Boise, Idaho.
 
