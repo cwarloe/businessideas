@@ -6,6 +6,18 @@ View: https://cwarloe.github.io/businessideas/oats-and-more/
 
 Interactive brand design studio: https://cwarloe.github.io/businessideas/oats-and-more/design-lab.html
 
+## Research and business-development record (November 11, 2026)
+
+The [Oats, Etc. research archive](research/README.md) consolidates the work from concept discovery and live voting through the current oatmeal-only breakfast pilot direction. It distinguishes decisions from ideas and unresolved requirements. Read the five records:
+
+- [Decision history](research/decision-log.md)
+- [Naming, trademarks, taglines and marketing](research/brand-and-marketing.md)
+- [Menu, warmers, unit economics, cart/trailer and Nissan Rogue towing](research/pilot-and-equipment.md)
+- [Boise/Ada County location and health regulations](research/local-regulation.md)
+- [Validation plan and open questions](research/validation-backlog.md)
+
+**Current pilot hypothesis:** One host-supported private commercial location with approved plug-in power, one plain cooked oatmeal base with a handful of toppings, and the ability to serve **30–60 paid bowls** during a morning window. A portable stand inside the Rogue or ultralight trailer is being evaluated; **equipment, location, legal brand clearance and licenses are not yet selected or approved**.
+
 ## What is included
 
 - Responsive homepage with six sample products and a sweet/savory filter
