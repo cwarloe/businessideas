@@ -1,6 +1,8 @@
 # Business Ideas Platform
 
-> **Status (Oct 2026):** planning scaffold only. The `web/`, `services/`, `infra/`, `design/` and `docs/` folders hold placeholder READMEs, and there is no `package.json`, Docker Compose file or service code yet, so the setup steps below describe the intended layout rather than something you can run today. `catalog/` holds a migrated product list.
+> **Status (Nov 11, 2026):** The broader platform still contains planning scaffolds, but the Oats, Etc. concept website, design lab and separate Cloudflare voting integration are live project assets. See [Oats, Etc. project docs](docs/oats-and-more/README.md) and the [research archive](docs/oats-and-more/research/README.md). The older platform setup description below is a proposed architecture, not an install guide for the live Oats, Etc. website.
+
+> **Earlier platform note (Oct 2026):** planning scaffold only. The `web/`, `services/`, `infra/`, `design/` and `docs/` folders hold placeholder READMEs, and there is no `package.json`, Docker Compose file or service code yet, so the setup steps below describe the intended layout rather than something you can run today. `catalog/` holds a migrated product list.
 
 Welcome to the Business Ideas platform repository. This project aims to provide a collaborative space for generating, evaluating, and developing business ideas using modern web technologies and AI-driven microservices.
 
