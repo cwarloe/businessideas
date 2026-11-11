@@ -1,0 +1,12 @@
+# Configure a SEPARATE Cloudflare Worker from Charles Fan Club.
+name = "oats-and-more-voting"
+main = "src/index.js"
+compatibility_date = "2026-11-10"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "oats-and-more-votes"
+# Replace after npx wrangler d1 create oats-and-more-votes.
+database_id = "REPLACE_WITH_NEW_D1_DATABASE_ID"
+
+# Never put ADMIN_TOKEN here. Use npx wrangler secret put ADMIN_TOKEN.
