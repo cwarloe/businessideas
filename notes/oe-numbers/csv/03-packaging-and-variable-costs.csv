@@ -1,0 +1,20 @@
+﻿"Oats, Etc. Stage 1  -  packaging and other per-bowl costs"
+CHARLES FILLS THIS IN from a receipt or a supplier quote. Enter 0 only when you are sure the item is not used. Live formulas are in the .xlsx workbook.
+
+Item,Store,Purchase qty,Unit,Purchase price,Amount used per bowl,Cost per bowl (in workbook),Receipt date,Who fills it,Notes
+Cup or bowl,,,,,,,,CHARLES FILLS THIS IN,
+Lid,,,,,,,,CHARLES FILLS THIS IN,Enter 0 if none.
+Spoon or utensil,,,,,,,,CHARLES FILLS THIS IN,Enter 0 if none.
+Napkin,,,,,,,,CHARLES FILLS THIS IN,Enter 0 if none.
+"Sleeve, bag, or carrier",,,,,,,,CHARLES FILLS THIS IN,Enter 0 if none.
+Label or sticker,,,,,,,,CHARLES FILLS THIS IN,Enter 0 if none.
+(extra row),,,,,,,,CHARLES FILLS THIS IN,
+PACKAGING TOTAL PER BOWL,,,,,,(calculated in workbook or enter a direct total in the workbook),,Workbook,"Required. If you have no packaging, enter 0 as a direct total in the workbook."
+
+Other variable input,Value,Unit,Who fills it,Notes
+Card processing fee percent,,"percent, e.g. 2.9 for 2.9%",CHARLES FILLS THIS IN,Leave blank if unknown. The workbook will treat a blank as $0 and list it as omitted. Do not invent a typical rate.
+Card per-transaction fee,,$ per bowl paid by card,CHARLES FILLS THIS IN,Same blank rule as the percent.
+Share of bowls paid by card,,1.00 = all card; 0 = all cash,CHARLES FILLS THIS IN,Blank is treated as omitted (fee $0).
+Spoilage and waste percent of ingredient cost,,"percent, e.g. 5 for 5%",CHARLES FILLS THIS IN,Blank is treated as $0 and listed as omitted. Do not invent a typical waste rate.
+Other per-bowl cost,,$,CHARLES FILLS THIS IN,Name the cost in a note.
+Host fee as a percent of ticket,,percent,CHARLES FILLS THIS IN,Blank is treated as $0.

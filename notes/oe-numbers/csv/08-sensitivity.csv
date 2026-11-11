@@ -1,0 +1,16 @@
+﻿"Oats, Etc. Stage 1  -  sensitivity (which inputs move break-even most)"
+The calculated table lives in the .xlsx workbook and stays on 'fill me in' until required costs and a ticket are entered.
+This CSV states the algebra and the cases the workbook will compute.
+
+Plain-language rule,"Break-even bowls per week = weekly fixed cost (F) divided by contribution per bowl (C = ticket minus variable cost). Because C is the divisor, ticket and variable cost move the answer most when the margin is thin."
+Kitchen rental,Likely the largest cost that repeats every selling morning. Changing hours reserved or the hourly rate changes F directly.
+Selling days per week,Monthly costs such as insurance and licenses are heavier per morning if you sell fewer days per week.
+Hours worked,Do not change break-even bowls. They change profit per hour once a volume is entered.
+Classic-only stress case,"If the mix is mostly the $5.95 Classic with no add-on, C shrinks. This case is in the workbook because the archive's $7.50 Stage 1 average ticket is a model input, not a measured mix (see OE Growth Steward notes in pull request 3, round 2, objection 3)."
+
+Case the workbook computes once inputs are filled,How it is varied
+Average ticket,"Minus $1.50, $1.00, $0.50; base; plus $0.50, $1.00, $1.50; plus a $5.95 Classic-only ticket with no add-on."
+Variable cost per bowl,"Minus 20% and 10%; base; plus 10%, 20%, and 30%."
+Weekly fixed cost,Minus 50% and 20%; base; plus 20% and 50%.
+Selling days per week,"2, 3, 4, and 5 mornings, using the same weekly non-day costs and per-day costs."
+Top-mover comparison,"Change in break-even bowls for a 10% increase in ticket, in variable cost, and in weekly fixed cost. The largest move is called out after you fill inputs."

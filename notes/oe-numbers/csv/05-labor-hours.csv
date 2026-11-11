@@ -1,0 +1,15 @@
+﻿"Oats, Etc. Stage 1  -  labor hours"
+CHARLES FILLS THIS IN. Hours are used to compute profit per hour. They are not treated as a cash wage in the primary break-even view. Stage 1 is not a living-wage model.
+"Enter 0 if a task truly takes no time. If the whole section is left blank, profit per hour stays on 'fill me in' and break-even bowls can still compute."
+
+Activity,Hours,Period,Who fills it,Notes
+Prep and cooking,,per selling day,CHARLES FILLS THIS IN,
+"Travel, round trip",,per selling day,CHARLES FILLS THIS IN,
+Setup,,per selling day,CHARLES FILLS THIS IN,
+Service window,,per selling day,CHARLES FILLS THIS IN,Enter 3 if your window is the 6:30 to 9:30 a.m. hypothesis in the decision log.
+Teardown,,per selling day,CHARLES FILLS THIS IN,
+Cleaning and warewashing,,per selling day,CHARLES FILLS THIS IN,
+Shopping and receiving,,per selling day,CHARLES FILLS THIS IN,"If this is weekly instead, use the admin row or say so in a note and convert."
+"Admin, ordering, and bookkeeping",,per week,CHARLES FILLS THIS IN,
+Other hours (name the work),,say which period,CHARLES FILLS THIS IN,
+WEEKLY HOURS (workbook),,per week,,(sum of per-day hours times selling days per week) plus weekly-only hours.
