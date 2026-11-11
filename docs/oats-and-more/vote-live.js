@@ -1,4 +1,4 @@
-/* Oats & More GitHub Pages -> standalone Cloudflare Worker voting adapter.
+/* Oats, Etc. GitHub Pages -> standalone Cloudflare Worker voting adapter.
  * Does nothing while vote-config.js has an empty API origin.
  * When configured, intercepts the demo button to send real votes. */
 (function () {
