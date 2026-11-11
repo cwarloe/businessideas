@@ -71,8 +71,8 @@ async function pollDetails(env, id, identity, admin = false) {
     "SELECT o.id, o.slug, o.label, COUNT(b.id) AS votes FROM poll_options o LEFT JOIN ballots b ON b.option_id=o.id AND b.poll_id=o.poll_id WHERE o.poll_id=? GROUP BY o.id ORDER BY o.position"
   ).bind(id).all();
   const total = results.reduce((sum, opt) => sum + Number(opt.votes), 0);
-  const show = admin || poll.visibility === "public" || poll.status === "closed" ||
-    (poll.visibility === "after_vote" && !!myRow);
+  const show = admin || poll.visibility === "public" ||
+    (poll.visibility === "after_vote" && (!!myRow || poll.status === "closed"));
   return {
     poll, voted: !!myRow,
     my_choice: myRow ? results.find(x => x.id === myRow.option_id)?.slug ?? null : null,
