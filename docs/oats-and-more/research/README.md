@@ -4,6 +4,11 @@
 **Scope:** All the naming, concept-design, market, food-cart, trailer, food-service, and sales-model brainstorming in the current development conversation.  
 **Status:** Working hypotheses, **not** an operating plan cleared by a trademark attorney, City of Boise, Central District Health, property owner, or trailer manufacturer.
 
+## Published research overview
+
+- [Public-facing Boise kitchen and office breakfast research page](../research.html) — accessible from the Oats, Etc. homepage, with linked sources and next-step recommendations.
+- [Full underlying Boise market-research notes](boise-kitchen-and-office-service-market-2026-11-11.md) — kitchen pricing, portable catering competitors, possible outreach prospects, regulatory questions and detailed working assumptions.
+
 ## Read this first
 
 Oats, Etc. is a proposed **warm, familiar oatmeal breakfast service** (sweet bowls first, rather than eggs/griddle cooking) targeting **a recurring morning location with concentrated workers**, rather than a food truck that roams in search of traffic. A host willing to welcome the business and provide **lawful power on private commercial property** is preferable. The **2017 Nissan Rogue's modest towing limit** now makes a lightweight transportable station more attractive than an enclosed concession trailer, at least for proof of concept.
