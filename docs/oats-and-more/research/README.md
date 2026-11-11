@@ -17,6 +17,7 @@ The next experiment is to validate an office-complex breakfast location and actu
 3. [Menu, equipment, distribution and economics](pilot-and-equipment.md) — 3 growth stages, capacity math, tow options, power, upsells, prices and gross-sales sensitivity.
 4. [Boise, Ada County, safety and approvals](local-regulation.md) — sidewalk vs private-property questions, CDH plan review, electrical and towing constraints, and primary sources.
 5. [Test plan, backlog and open questions](validation-backlog.md) — research gaps, field tests, decision gates, evidence to gather.
+6. [Boise shared kitchens, office breakfast delivery and pop-up market research (Nov 11)](boise-kitchen-and-office-service-market-2026-11-11.md) — five kitchen rental leads with published prices, local portable-catering competitors, office-host strategy and CDH classification questions.
 
 ## Existing working assets (do not overwrite)
 
