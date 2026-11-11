@@ -17,8 +17,7 @@ Start here, in this order:
 3. **[register.md](register.md)**: the master register of permits, licenses, registrations, insurance, tax obligations, and filings that are relevant to Stage 1.
 4. **[questions-for-charles.md](questions-for-charles.md)**: only the decisions that truly block the next step.
 5. **[calendar-plan.md](calendar-plan.md)**: a plan for reminders in Google Calendar and a simple Drive folder layout. No calendar events or Drive files were created.
-
-Call scripts will be added in a follow-up note in this folder. Until then, use the call outline in this-week.md, and the longer scripts already in `notes/oe-kitchen/` ([pull request 4](https://github.com/cwarloe/businessideas/pull/4)).
+6. **[drafts/](drafts/)**: call scripts and an answer log for you to review and use yourself.
 
 If you only have a few minutes on your phone, read start-here.md and this-week.md.
 
