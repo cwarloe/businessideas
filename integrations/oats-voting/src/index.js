@@ -1,5 +1,5 @@
 /**
- * Oats & More concept-poll API.
+ * Oats, Etc. concept-poll API.
  * Based on the separate Charles Fan Club D1 polling approach, NOT its DB.
  * Accepts votes only from the approved GitHub Pages origin; CORS is not authentication.
  * Requires D1 binding DB and a 32+ character ADMIN_TOKEN Worker secret.
