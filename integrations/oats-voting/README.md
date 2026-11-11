@@ -1,11 +1,28 @@
-# Oats & More — voting service (prepared, NOT deployed)
+# Oats & More — voting service
 
 Cloudflare Worker + D1 SQLite API modeled on Charles Fan Club's polling feature.
 It uses its own separate database, with no child or family data. The customer-facing
 website stays on GitHub Pages at
 https://cwarloe.github.io/businessideas/oats-and-more/.
 
-## One-time setup in a Cloudflare account
+## Live deployment
+
+Deployed November 10, 2026 to a separate Worker and D1 database:
+
+- API: https://oats-and-more-voting.charles-warloe.workers.dev
+- Database: `oats-and-more-votes`
+- Voting: https://cwarloe.github.io/businessideas/oats-and-more/
+- Admin: https://cwarloe.github.io/businessideas/oats-and-more/vote-admin.html
+
+The admin token is stored as a Cloudflare Worker secret, never in this repository.
+A private access file was provided to the owner. Rotate the `ADMIN_TOKEN` secret
+in Cloudflare if needed, then use the new value in the admin dashboard.
+
+Live validation covered voting, vote updates without duplicate ballots,
+returning-browser identity, results, rejected origins, and admin authentication.
+The validation ballot was removed after testing.
+
+## Setup in another Cloudflare account
 
 1. From this folder, run npx wrangler login, unless already logged in.
 2. Run npx wrangler d1 create oats-and-more-votes.
@@ -51,7 +68,7 @@ GET /api/admin/polls/{id}/export.csv — aggregate CSV
 - No names, emails or other contact information are collected.
 - Results are normally shown after voting; owner-only polls keep counts private.
 - Database and Worker quotas depend on Cloudflare's plan and usage.
-- This has not yet been tested against a deployed Cloudflare D1 instance.
+- Tested against the deployed Cloudflare D1 instance. Counts remain directional feedback, not verified unique people.
 
 ## Source examples reused
 

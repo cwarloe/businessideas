@@ -8,7 +8,8 @@ View: https://cwarloe.github.io/businessideas/oats-and-more/
 
 - Responsive homepage with six sample products and a sweet/savory filter
 - Illustrative bowl-price customizer
-- Local-only browser flavor vote (no votes collected)
+- Live flavor voting through a separate Cloudflare Worker and D1 database
+- Private poll manager with tallies, open/close controls, and CSV export
 - Concept cart and corporate catering messaging
 - Printable menu board: [menu-board.html](menu-board.html)
 

@@ -87,7 +87,7 @@
 
     <section id="groups" class="groups-section"><div class="container groups-layout"><div><p class="eyebrow eyebrow-light">FOR THE WHOLE CREW</p><h2>Bring good bowls<br>to work.</h2><p>Imagine an easy breakfast meeting or a surprisingly satisfying team lunch: warm sweet bowls, savory favorites, and something for everyone at the table.</p><a href="#vote" class="button button-orange">Tell us what your team would like <span aria-hidden="true">→</span></a></div><div class="group-gallery"><img src="" data-asset="overnight.webp" alt="Chilled overnight oat cup with berries and crunchy toppings" loading="lazy"><div class="group-note">Breakfast meetings.<br>Team lunches.<br>Good food, made easy.</div></div></div></section>
 
-    <section id="vote" class="section vote-section container"><div class="vote-intro"><p class="eyebrow">HELP US GET IT RIGHT</p><h2>Which bowl would<br>you try first?</h2><p>We're still exploring the concept. Choose one of these recipes to see what people are curious about.</p><p class="fine-print">This is a local, on-device demo poll. Your choice is not submitted or counted across visitors.</p></div><div class="poll-card"><div class="poll-options"><label><input type="radio" name="poll" value="apple"><span>🍎 &nbsp; Apple Pie Oats</span></label><label><input type="radio" name="poll" value="grits"><span>🍳 &nbsp; Cheddar & Egg Grits</span></label><label><input type="radio" name="poll" value="mushroom"><span>🍄 &nbsp; Mushroom & Herb Oats</span></label></div><button id="vote-submit" class="button button-orange" type="button">Save my choice (this device)</button><p id="vote-message" class="vote-message" aria-live="polite"></p></div></section>
+    <section id="vote" class="section vote-section container"><div class="vote-intro"><p class="eyebrow">HELP US GET IT RIGHT</p><h2>Which bowl would<br>you try first?</h2><p>We're still exploring the concept. Choose one of these recipes to see what people are curious about.</p><p class="fine-print">Votes are counted across visitors. Vote to see the results; you can change your choice on this browser.</p></div><div class="poll-card"><div class="poll-options"><label><input type="radio" name="poll" value="apple"><span>🍎 &nbsp; Apple Pie Oats</span></label><label><input type="radio" name="poll" value="cheddar"><span>🍳 &nbsp; Cheddar & Egg Grits</span></label><label><input type="radio" name="poll" value="mushroom"><span>🍄 &nbsp; Mushroom & Herb Oats</span></label></div><button id="vote-submit" class="button button-orange" type="button" disabled>Checking voting…</button><p id="vote-message" class="vote-message" aria-live="polite"></p></div></section>
   </main>
   <footer class="site-footer"><div class="container footer-layout"><div><a class="footer-brand" href="#top">Oats & More</a><p>Good Food. By the Bowl.</p><small>Concept preview · Boise-area market research · Not open for orders</small></div><div><a href="#menu">Sample menu</a><a href="#groups">Group concepts</a><a href="menu-board.html">Menu-board preview</a></div></div><div class="container footer-bottom">© 2026 Oats & More — working concept. Name, logo and menu are provisional and subject to trademark clearance and testing.</div></footer>
 <script>
@@ -513,17 +513,7 @@
   };
   builder.addEventListener('change', recalc);
 
-  const choices = document.querySelectorAll('input[name="poll"]');
-  const msg = document.getElementById('vote-message');
-  let stored;
-  try { stored = window.localStorage.getItem('oats-more-demo-pick'); } catch (e) { /* storage unavailable */ }
-  if (stored) { const previous = [...choices].find(x => x.value === stored); if (previous) previous.checked = true; msg.textContent = 'Your previous choice on this device is selected.'; }
-  document.getElementById('vote-submit').addEventListener('click', () => {
-    const selected = document.querySelector('input[name="poll"]:checked');
-    if (!selected) { msg.textContent = 'Choose a bowl first.'; return; }
-    try { window.localStorage.setItem('oats-more-demo-pick', selected.value); msg.textContent = 'Saved on this device for the demo. No vote was submitted to us.'; }
-    catch (e) { msg.textContent = 'Your choice is selected. Your browser did not allow local saving.'; }
-  });
+
 })();
 
 </script>
