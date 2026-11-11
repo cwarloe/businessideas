@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow"><title>Oats & More — Poll Manager (Preview)</title>
+<style>
+:root{--g:#294636;--cream:#faf5e9;--orange:#bb6437;--ink:#292b24}*{box-sizing:border-box}
+body{margin:0;background:var(--cream);font:16px/1.5 system-ui,sans-serif;color:var(--ink)}
+main{max-width:850px;margin:auto;padding:24px}header{background:var(--g);color:white;padding:20px}
+header div{max-width:850px;margin:auto}h1{font-family:Georgia,serif;font-size:clamp(1.7rem,5vw,2.7rem);margin:.2em 0}
+h2{font-family:Georgia,serif;margin:0 0 12px}a{color:inherit}.panel{background:#fff;border-radius:14px;padding:22px;margin:20px 0;box-shadow:0 2px 10px #00000011}
+label{display:block;font-weight:700;margin:10px 0}input,textarea,select,button{font:inherit;max-width:100%}
+input:not([type=checkbox]),textarea,select{width:100%;padding:12px;border:1px solid #aeb5a9;border-radius:8px;background:white}
+button{border:0;background:var(--g);color:white;padding:11px 18px;border-radius:8px;cursor:pointer;font-weight:700}
+button.alt{background:var(--orange)}button:disabled{opacity:.5;cursor:not-allowed}.row{display:flex;align-items:center;gap:12px;justify-content:space-between;flex-wrap:wrap;margin:12px 0}
+.error{color:#a32222}.muted{color:#647066}.count{font-size:2rem;font-weight:bold;color:var(--g)}
+.bar{height:12px;border-radius:20px;background:#e3ebe1;overflow:hidden}
+.fill{height:100%;background:var(--g)}.chip{padding:3px 9px;border-radius:9px;background:#ecede6;color:var(--g);font-size:.83rem}
+small{font-size:.85rem}
+</style></head><body>
+<header><div><a href="./">← Oats & More site</a><h1>Poll Manager</h1><small>Private controls for a public concept preview. Never share your admin token.</small></div></header>
+<main>
+<section class="panel"><h2>Connect to voting service</h2>
+<label>Cloudflare Worker URL<input id="api" placeholder="https://oats-and-more-voting.YOUR-SUBDOMAIN.workers.dev" inputmode="url"></label>
+<label>Admin token<input id="secret" type="password" autocomplete="off" placeholder="From your Cloudflare Worker secrets"></label>
+<button id="connect">Connect & load polls</button> <span id="status" role="status"></span>
+<p class="muted"><small>The service URL may be saved on this browser. Your admin token stays only in this open tab and is not saved.</small></p></section>
+<section class="panel"><h2>Polls and results</h2><div id="polls">Connect to see polls.</div></section>
+<section class="panel"><h2>Create another poll</h2>
+<form id="newpoll">
+<label>Poll ID (lowercase, hyphens)<input id="pid" required placeholder="next-lunch-bowl" pattern="[a-z0-9-]{3,40}"></label>
+<label>Question<input id="question" maxlength="200" required placeholder="Which savory bowl would you order?"></label>
+<label>Choices (one per line)<textarea id="options" required rows="5" placeholder="Cheddar & Egg Grits&#10;Southwest Bowl&#10;Mushroom & Herb Oats"></textarea></label>
+<label>Results visible to visitors
+<select id="visibility"><option value="after_vote">Only after they vote</option>
+<option value="owner">Only me</option><option value="public">Everyone</option></select></label>
+<button type="submit">Create poll</button> <span id="created" role="status"></span></form>
+</section>
+</main>
+<script src="vote-config.js"></script>
+<script>
+'use strict';
+const $=id=>document.getElementById(id);
+let authToken=""; let service="";
+const defaultOrigin=window.OATS_VOTING_API||"";
+const previous=(()=>{try{return sessionStorage.getItem("oats-worker-origin")||""}catch{return""}})();
+$("api").value=previous||defaultOrigin;
+function validateApi(raw){try{const u=new URL(raw);return u.protocol==="https:"&&u.pathname==="/"&&u.search===""&&u.hash===""?u.origin:null}catch{return null}}
+function status(message, bad=false){$("status").textContent=message;$("status").className=bad?"error":"muted"}
+async function request(path,opts={}){
+ if(!service||!authToken)throw Error("Connect first.");
+ const res=await fetch(service+path,{...opts,headers:{"Authorization":"Bearer "+authToken,...opts.headers}});
+ if(!res.ok){const txt=await res.text();let detail;try{detail=JSON.parse(txt).error}catch{detail=txt}throw Error(detail||("HTTP "+res.status))}
+ if(res.headers.get("content-type")?.includes("text/csv"))return res.blob();
+ return res.json();
+}
+function tag(text){const span=document.createElement("span");span.className="chip";span.textContent=text;return span}
+function textEl(name,txt){const el=document.createElement(name);el.textContent=txt;return el}
+async function load(){
+ try{
+  const data=await request("/api/admin/polls");status("Connected.");
+  const area=$("polls");area.replaceChildren();
+  if(!data.polls.length){area.append(textEl("p","No polls yet."));return}
+  for(const p of data.polls){
+   const wrap=document.createElement("section");wrap.style.padding="16px 0";wrap.style.borderBottom="1px solid #eee";
+   const line=document.createElement("div");line.className="row";
+   const name=textEl("strong",p.question);line.append(name,tag(p.status),tag(p.visibility));wrap.append(line);
+   const result=document.createElement("div");wrap.append(result);
+   const actions=document.createElement("div");actions.className="row";
+   const toggle=document.createElement("button");toggle.type="button";toggle.textContent=p.status==="open"?"Close poll":"Reopen poll";toggle.className="alt";
+   toggle.addEventListener("click",async()=>{if(!confirm("Change poll to "+(p.status==="open"?"closed":"open")+"?"))return;
+      try{await request("/api/admin/polls/"+encodeURIComponent(p.id),{method:"PATCH",headers:{"Content-Type":"application/json"},body:JSON.stringify({status:p.status==="open"?"closed":"open"})});await load()}catch(e){status(e.message,true)}});
+   const exportBtn=document.createElement("button");exportBtn.type="button";exportBtn.textContent="Download CSV";
+   exportBtn.addEventListener("click",async()=>{try{const blob=await request("/api/admin/polls/"+encodeURIComponent(p.id)+"/export.csv");const link=document.createElement("a");const u=URL.createObjectURL(blob);link.href=u;link.download=p.id+"-results.csv";link.click();setTimeout(()=>URL.revokeObjectURL(u),1000)}catch(e){status(e.message,true)}});
+   actions.append(toggle,exportBtn);wrap.append(actions);area.append(wrap);
+   try{const data=await request("/api/admin/polls/"+encodeURIComponent(p.id)+"/results");
+     result.append(textEl("p",String(data.results?.total_voters||0)+" recorded votes"));
+     for(const opt of data.options){const row=document.createElement("div");row.className="row";row.append(textEl("span",opt.label),textEl("strong",String(opt.votes||0)));result.append(row);
+       const bar=document.createElement("div");bar.className="bar";const fill=document.createElement("div");fill.className="fill";
+       fill.style.width=(!data.results?.total_voters?0:(opt.votes/data.results.total_voters*100))+"%";bar.append(fill);result.append(bar)}
+   }catch(e){result.append(textEl("p","Could not load poll results: "+e.message))}
+  }
+ }catch(e){status(e.message,true)}
+}
+$("connect").addEventListener("click",()=>{
+ const url=validateApi($("api").value.trim());if(!url){status("Enter a valid HTTPS Worker origin, without a path.",true);return}
+ service=url;authToken=$("secret").value.trim();if(authToken.length<32){status("Enter the 32+ character admin token.",true);return}
+ try{sessionStorage.setItem("oats-worker-origin",url)}catch{}
+ load();
+});
+$("newpoll").addEventListener("submit",async e=>{
+ e.preventDefault();
+ const opts=$("options").value.split("\n").map(x=>x.trim()).filter(Boolean);
+ try{await request("/api/admin/polls",{method:"POST",headers:{"Content-Type":"application/json"},
+  body:JSON.stringify({id:$("pid").value.trim(),question:$("question").value.trim(),options:opts,visibility:$("visibility").value})});
+  $("created").textContent="Poll created.";e.target.reset();await load();
+ }catch(err){$("created").textContent="Error: "+err.message}
+});
+</script></body></html>
