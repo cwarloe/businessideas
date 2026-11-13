@@ -1,0 +1,13 @@
+﻿"Oats, Etc. Stage 1  -  income-target scenario (SECONDARY VIEW ONLY)"
+"This is a scenario, not the purpose of Stage 1, and not a forecast. Stage 1 is a break-even experiment to learn from, not a living-wage plan."
+CHARLES FILLS THIS IN for the target only. Costs still come from the other sheets.
+
+Input,Value,Unit,Who fills it,Notes
+Target weekly take-home,,$ per week,CHARLES FILLS THIS IN,"If both weekly and monthly are filled, the workbook uses the weekly target."
+Target monthly take-home,,$ per month,CHARLES FILLS THIS IN,Used only if the weekly target is blank: weekly target = monthly divided by weeks per month.
+
+Scenario output,Plain-language formula
+Bowls per week to hit the target,(Weekly fixed cost + target weekly income) divided by contribution per bowl.
+Bowls per selling day to hit the target,The weekly figure divided by selling days per week.
+Ticket needed at the optional scenario volume,Variable cost + ((weekly fixed cost + target weekly income) divided by scenario bowls per week).
+Selling days per week needed at the optional scenario daily volume and current ticket,"(Weekly non-day-dependent fixed cost + target weekly income) / ((contribution per bowl times bowls per day) minus per-day fixed cost), when that denominator is positive."

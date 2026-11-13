@@ -1,0 +1,32 @@
+﻿"Oats, Etc. Stage 1  -  ingredient cost per bowl, from grocery receipts"
+CHARLES FILLS THIS IN. Use the same unit for purchase quantity and amount used. Do not invent prices. Live formulas are in the .xlsx workbook.
+The three Stage 1 bowls share one plain cooked oatmeal base (docs/oats-and-more/research/pilot-and-equipment.md).
+
+Section,Ingredient,Store and brand,Purchase qty,Unit,Purchase price,Amount used per bowl,Unit (must match purchase unit),Cost per bowl (in workbook: price / qty * amount used),Receipt date,Who fills it,Notes
+Shared oatmeal base,Oats,,,,,,,,,CHARLES FILLS THIS IN,Fill from receipt.
+Shared oatmeal base,"Liquid (name water, milk, or other)",,,,,,,,,CHARLES FILLS THIS IN,Enter 0 for purchase price if you use only tap water and want that stated.
+Shared oatmeal base,Salt or other base seasoning,,,,,,,,,CHARLES FILLS THIS IN,Enter 0 if unused.
+Shared oatmeal base,(extra row),,,,,,,,,CHARLES FILLS THIS IN,
+Shared oatmeal base,(extra row),,,,,,,,,CHARLES FILLS THIS IN,
+Shared oatmeal base,BASE COST PER BOWL (sum of rows above),,,,,,,(calculated in workbook),,Workbook,"Required for a complete model, unless you use the blended shortcut."
+
+Classic toppings,Brown sugar,,,,,,,,,CHARLES FILLS THIS IN,Archive starter: Classic Brown Sugar and Cinnamon.
+Classic toppings,Cinnamon,,,,,,,,,CHARLES FILLS THIS IN,
+Classic toppings,Butter,,,,,,,,,CHARLES FILLS THIS IN,Listed on the public menu board description of The Classic. Include only if you use it.
+Classic toppings,Raisins (if used),,,,,,,,,CHARLES FILLS THIS IN,Mentioned in decision-log.md as a possible topping. Include only if used.
+Classic toppings,(extra row),,,,,,,,,CHARLES FILLS THIS IN,
+Classic toppings,CLASSIC BOWL INGREDIENT COST (base + toppings),,,,,,,(calculated in workbook),,Workbook,
+
+Maple Walnut toppings,Maple (syrup or the form you use),,,,,,,,,CHARLES FILLS THIS IN,
+Maple Walnut toppings,Walnuts,,,,,,,,,CHARLES FILLS THIS IN,Allergen labeling is noted as an operational issue in local-regulation.md.
+Maple Walnut toppings,(extra row),,,,,,,,,CHARLES FILLS THIS IN,
+Maple Walnut toppings,MAPLE WALNUT BOWL INGREDIENT COST (base + toppings),,,,,,,(calculated in workbook),,Workbook,
+
+Apple Pie toppings,Apples or apple topping,,,,,,,,,CHARLES FILLS THIS IN,Handling and storage still subject to review in the archive.
+Apple Pie toppings,Maple or other sweetener (if used),,,,,,,,,CHARLES FILLS THIS IN,
+Apple Pie toppings,Oat crumble (list each ingredient; use extra rows),,,,,,,,,CHARLES FILLS THIS IN,"Public menu describes warm apples, maple, and oat crumble."
+Apple Pie toppings,Cinnamon or spice (if extra),,,,,,,,,CHARLES FILLS THIS IN,
+Apple Pie toppings,(extra row),,,,,,,,,CHARLES FILLS THIS IN,
+Apple Pie toppings,APPLE PIE BOWL INGREDIENT COST (base + toppings),,,,,,,(calculated in workbook),,Workbook,
+
+Shortcut (optional),Blended ingredient cost per bowl if you are not yet costing by recipe,,,,,,,,,CHARLES FILLS THIS IN,Prefer the recipe-level rows when you can. Do not invent a typical food-cost percent.

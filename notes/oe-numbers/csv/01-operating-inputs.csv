@@ -1,0 +1,16 @@
+﻿"Oats, Etc. Stage 1  -  operating inputs"
+"CHARLES FILLS THIS IN. Empty amount cells are yours. Do not guess. The live formulas are in the .xlsx workbook, not in this CSV."
+
+Input,Value,Unit,Who fills it,Notes
+Selling days per week,,days,CHARLES FILLS THIS IN,"Not decided in the archive (2, 3, 4, or 5). See docs/oats-and-more/research/decision-log.md."
+Serving window,,hours per selling day,CHARLES FILLS THIS IN,Archive hypothesis is about 6:30 to 9:30 a.m. (3 hours). Enter 3 only if that is your window.
+Weeks per month,4.33,weeks,Editable assumption,ASSUMPTION from monthly math in docs/oats-and-more/research/pilot-and-equipment.md.
+Scenario bowls sold per selling day (optional),,bowls,CHARLES FILLS THIS IN (optional),"Optional scenario, not a forecast. Archive mentions 20 to 35 (Stage 1 table) and 30 to 60 (working hypothesis)."
+Manual average ticket (use if you do not fill a mix),,$ per bowl,CHARLES FILLS THIS IN,"Do not treat 7.50 as a default. That figure is a model input in the archive, not a measured average."
+
+Menu mix (optional path to average ticket). Shares should add to 100. Proposed prices are editable assumptions from docs/oats-and-more/research/pilot-and-equipment.md.
+Bowl,Proposed price ($),Share of bowls sold (%),Add-on dollars per bowl (optional),Who fills it,Notes
+Classic Brown Sugar and Cinnamon,5.95,,,Price is a cited assumption; share and add-ons are CHARLES FILLS THIS IN,Starter menu working price point. Not a tested price.
+Maple Walnut,7.50,,,Price is a cited assumption; share and add-ons are CHARLES FILLS THIS IN,Starter menu working price point. Not a tested price.
+Apple Pie Oats,7.95,,,Price is a cited assumption; share and add-ons are CHARLES FILLS THIS IN,Apple handling still subject to recipe and health review in the archive.
+Other / team pack / drink (describe in notes),,,,CHARLES FILLS THIS IN,
