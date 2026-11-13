@@ -14,4 +14,4 @@ Please answer these in a short note when you can. You do not have to answer all 
 
 5. **Is "Oats, Etc." the name you will put on applications?** The research archive treats this as a working name that has not been professionally cleared. You can call CDH with a working name. You should not file a city license, an assumed business name, or an entity until you are willing to use that name (or another name) on public records.
 
-When you have answers, keep them in a note on your phone or in a Word file on your Windows PC. A call-log template will follow in this folder. This bot will not file anything from those answers.
+When you have answers, keep them with the call log in [drafts/answer-log.md](drafts/answer-log.md), or in a note on your phone or in a Word file on your Windows PC. This bot will not file anything from those answers.
