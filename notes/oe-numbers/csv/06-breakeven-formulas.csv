@@ -1,0 +1,22 @@
+﻿"Oats, Etc. Stage 1  -  break-even formulas (primary view)"
+These are definitions. Results are computed in the .xlsx workbook after required inputs are filled. Until then the workbook says 'fill me in'.
+"Stage 1 is a break-even experiment to learn from, not a living-wage plan."
+
+Output,Plain-language formula,Required inputs
+Ingredient cost per line,"Purchase price divided by purchase quantity, times amount used in one bowl. Use the same unit for both quantities.",Receipt amounts
+Bowl ingredient cost,Shared oatmeal base cost plus toppings for that bowl.,"Base and toppings, or the blended shortcut"
+Weighted ingredient cost,Sum of (bowl ingredient cost times that bowl's share of sales). Shares must add to 100%.,Mix shares and each bowl's cost
+Packaging cost per bowl,"Same purchase-price method, summed, or a direct total you enter.",Packaging lines or a direct 0
+Payment fee per bowl,(Average ticket times card-fee percent plus any per-transaction fee) times the share paid by card. Blank card fields are treated as $0 and listed as omitted.,Optional
+Spoilage per bowl,Ingredient cost times spoilage percent. Blank is treated as $0 and listed as omitted.,Optional
+Variable cost per bowl (V),Ingredient cost + packaging + payment fee + spoilage + other per-bowl cost + host percent of ticket.,Ingredients and packaging required
+Contribution per bowl (C),Average ticket (T) minus V.,Ticket and V
+Kitchen cost per selling day,Hourly rate times the larger of reserved hours and any minimum booking.,"Kitchen rate and hours, or 0 and 0"
+Weekly fixed cost (F),(Per-day costs times selling days) + per-week costs + (per-month costs divided by weeks per month) + (per-year costs divided by 52). Optional startup recovery is added only if you enter a recovery period in months.,Selling days; weeks per month (default 4.33)
+Break-even bowls per week,"F divided by C, only if C is greater than 0 and required inputs are filled.",F and C
+Break-even bowls per selling day,Break-even bowls per week divided by selling days per week.,Above plus selling days
+Weekly gross at a scenario volume,T times bowls per day times selling days per week.,Optional scenario bowls
+Weekly profit at a scenario volume,"C times bowls per week, minus F. No operator wage is subtracted.",Optional scenario bowls
+Profit per hour,Weekly profit divided by weekly hours.,Hours section
+Monthly figures,Weekly figures times weeks per month (default assumption 4.33).,Weeks per month
+If T is at or below V,"The workbook reports that break-even is not possible at this ticket, instead of a huge or negative bowl count.",

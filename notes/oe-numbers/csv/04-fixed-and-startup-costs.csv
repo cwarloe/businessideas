@@ -1,0 +1,26 @@
+﻿"Oats, Etc. Stage 1  -  fixed, repeating, and startup costs"
+CHARLES FILLS THIS IN from a confirmed quote or bill. Advertised kitchen rates and example health-department fees in the research archive are notes only. Do not copy them here until confirmed. See assumptions-and-sources.md.
+"If you want to inspect break-even with no kitchen charge, enter 0 for the kitchen rate and 0 for hours. Leaving them blank keeps the workbook on 'fill me in'."
+
+Kitchen rental block,Value,Unit,Who fills it,Notes
+Kitchen hourly rate,,$ per hour,CHARLES FILLS THIS IN,"Confirm with the kitchen. Archive advertised examples (Gina's, Flava, Commons, Osage) are not filled in here."
+Kitchen hours reserved per selling day,,hours,CHARLES FILLS THIS IN,"The office-channel memo's example used 2 hours. That is an example, not your booking."
+"Kitchen minimum hours, if any",,hours,CHARLES FILLS THIS IN,"Enter 0 if there is no minimum. Blank means this line is not confirmed; the workbook will then use reserved hours only, once a rate and reserved hours exist."
+Kitchen cost per selling day,,$ (workbook: rate times the larger of reserved hours and minimum),,Calculated in the workbook.
+
+Other repeating cost,Amount,"How often (per selling day, per week, per month, or per year)",Who fills it,Notes
+Fuel and vehicle,,per selling day,CHARLES FILLS THIS IN,Blank is treated as $0 and listed as omitted.
+Host site fee (flat),,say which frequency,CHARLES FILLS THIS IN,Blank is treated as $0.
+Licenses and permits,,per year or as billed,CHARLES FILLS THIS IN,Do not paste the archive's example Central District Health figures until you confirm category and fee.
+Insurance,,per month or year,CHARLES FILLS THIS IN,
+Utilities (beyond the kitchen rate),,per month,CHARLES FILLS THIS IN,
+Storage,,per month,CHARLES FILLS THIS IN,
+Software or payment-device subscription (not the per-sale fee),,per month,CHARLES FILLS THIS IN,
+Other repeating cost (name it),,,CHARLES FILLS THIS IN,
+
+Startup or one-time cost,Amount,Who fills it,Notes
+Kitchen onboarding or deposit,,CHARLES FILLS THIS IN,Kept out of weekly break-even unless you enter a recovery period.
+Plan review or application fees,,CHARLES FILLS THIS IN,
+Equipment and smallwares,,CHARLES FILLS THIS IN,Archive guidance is not to buy equipment until demand and a legal site are proven.
+Other startup cost (name it),,CHARLES FILLS THIS IN,
+Optional: recover startup costs over this many months,,CHARLES FILLS THIS IN,Leave blank to keep startup out of weekly break-even.
