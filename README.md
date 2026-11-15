@@ -6,6 +6,11 @@
 
 Welcome to the Business Ideas platform repository. This project aims to provide a collaborative space for generating, evaluating, and developing business ideas using modern web technologies and AI-driven microservices.
 
+## Business explorations
+
+- [Oats, Etc.](docs/oats-and-more/README.md) — grain-bowl concept, design lab and Boise pilot research.
+- [Fudge](docs/fudge/README.md) — Boise market research, business concepts, pricing scenarios and a small validation plan.
+
 ## Repository structure
 
 - **docs/**: Project requirements, specifications, and user stories.
