@@ -12,7 +12,7 @@ Boise is not an empty fudge market. Rocky Mountain Chocolate Factory in Meridian
 
 ## Project record
 
-- [Four brand mockups, marketing strategies and preliminary trademark findings](research/brand-shortlist-and-trademark-screen-2026-11-15.md): The Fudge Parcel, Warloe’s Fudge, Fudge Social and Fudge Outpost; select favorites before building sample websites.
+- [Three brand mockups, marketing strategies and preliminary trademark findings](research/brand-shortlist-and-trademark-screen-2026-11-15.md): The Fudge Parcel, Fudge Social and Fudge Outpost, plus findings on “Oh, Fudge!”; select favorites before building sample websites.
 
 - [Boise and Treasure Valley market research](research/boise-market-2026-11-15.md): competitors, evidence quality, published price benchmark, market leads and sources.
 - [Concepts, flavors and naming directions](research/concepts-and-brand.md): eight business models, three brand directions and a deliberately small opening menu.
