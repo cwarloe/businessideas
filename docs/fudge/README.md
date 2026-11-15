@@ -6,6 +6,8 @@ A separate business project alongside [Oats, Etc.](../oats-and-more/README.md), 
 
 ## Start here
 
+**Current creative shortlist:** Fudge Social, Pass the Fudge and Fudge for Friends, focused on enjoying fudge together. Open the [interactive sharing studio](index.html) to mix names, styles and occasions. See the [current sharing-first concepts and name checks](research/sharing-first-concepts-2026-11-15.md). Earlier name explorations remain background research.
+
 **Working recommendation:** Test a small, preorder-based fudge gift business before considering a shop, trailer or large market commitment. Compare an approachable everyday treat with a gift-ready flight; learn which occasion actually makes people buy.
 
 Boise is not an empty fudge market. Rocky Mountain Chocolate Factory in Meridian explicitly advertises store-made fudge; Lee’s is an established Boise confectioner with documented fudge production; Weiser Classic Candy sells fudge online. Being homemade or offering an assortment will not by itself establish a distinctive position. These findings support testing a sharper offer, not a conclusion that demand is saturated.
