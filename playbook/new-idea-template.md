@@ -1,6 +1,6 @@
 # New business idea — reusable project template
 
-> Copy this entire file to `ideas/<slug>/README.md` and replace brackets. Keep the sections even when the answer is **UNKNOWN**. Read the [process playbook](../../BUSINESS_IDEA_PLAYBOOK.md) and [Oats lessons](../../playbook/lessons-learned.md) first. Adapt relative links when this file is copied to a different location.
+> Copy this entire file to `ideas/<slug>/README.md` and replace brackets. Keep the sections even when the answer is **UNKNOWN**. Read the [process playbook](https://github.com/cwarloe/businessideas/blob/main/BUSINESS_IDEA_PLAYBOOK.md) and [Oats lessons](https://github.com/cwarloe/businessideas/blob/main/playbook/lessons-learned.md) first. The source links remain usable after this file is copied into a new idea folder (once the documentation PR is merged).
 
 **Idea name:** [working name]  
 **Created / last reviewed:** [YYYY-MM-DD]  
