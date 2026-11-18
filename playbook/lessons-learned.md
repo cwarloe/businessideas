@@ -34,6 +34,14 @@ This file preserves *why* the project changed direction. The source-of-record fo
 5. **Technology was reused without sharing sensitive data.** The Oats poll reused the Charles Fan Club *pattern* but used a separate Cloudflare Worker and D1 database. Secrets were not committed to GitHub.
 6. **Brand variants remained switchable.** The design lab allows testing names, layouts and language without constructing three independent production systems.
 
+## November 18 follow-up: publishing verification became automated
+
+After the earlier GitHub Pages/domain confusion, the repository added a source-to-live verification system: [deployment monitor workflow](../.github/workflows/verify-live-site.yml) (merged via [PR #13](https://github.com/cwarloe/businessideas/pull/13)) and [verification script](../.github/scripts/verify-live-site.sh), expanded on November 18 to cover the Oats homepage, design lab, public research page, menu board, vote-admin page and related JavaScript assets. The workflow runs after pushes to `main`, on a weekly schedule, and on demand; it retries while GitHub Pages propagates, then fails if served files don't match repository bytes.
+
+**Reusable lesson:** A committed change, a successful CI build, and the bytes actually served by the public site are **different states**. Verify multiple user-facing entry points and assets, not just the homepage or a footer version number. Automate that comparison when the project grows, while keeping it read-only.
+
+**Limit:** This monitor checks public static-file parity. It does **not** establish that Cloudflare Worker/D1 logic, authentication, poll integrity, real user flows or food-business field validation are correct. Those require separate targeted checks.
+
 ## Next-idea rules distilled
 
 - Start with **customer pain, reachable buyers and profitable delivery**, not the logo, trailer or app.
