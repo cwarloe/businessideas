@@ -1,7 +1,7 @@
 # Milk Bar — concept and decision record
 
 **Created:** November 18, 2026  
-**Stage:** Round 1 market research complete, awaiting owner review  
+**Stage:** Round 2 desk research complete. Site terms and written agency classification pending  
 **Status:** HYPOTHESIS — no product sold, no business name cleared, no food-service approval, no storefront or equipment selected  
 **Working label:** "Milk Bar" describes the category, **not** a trademark-cleared name  
 **Initial research geography:** Boise/Treasure Valley, Idaho, with international analogs for comparison
@@ -105,7 +105,7 @@ Never call gross sales profit. Earlier illustrative price/cost examples from bra
 | 2026-11-18 | Excluding coffee, espresso, ice cream, shakes and smoothies from launch | **Proposed, not confirmed** |
 | 2026-11-18 | Boise/Treasure Valley, host site, pop-up format, pricing, size, supplier, permitting | **Unverified** |
 | 2026-11-18 | Demand, target profit, legal approvals, any live sales | **Not tested** |
-| 2026-11-18 | Round 1 market screen | Completed. HOLD a dedicated counter. A recurring host is the preferred candidate for feasibility review. Owner decision pending. |
+| 2026-11-18 | Round 1 market screen | Completed. HOLD a dedicated counter. A recurring host is the preferred candidate for feasibility review. Subsequently authorized for Round 2 on November 18. |
 | 2026-11-18 | Lead appeal and audience | Both remain open. Afternoon treat buyers have the closest adjacent evidence. Pairs and families are a distinct discovery audience. |
 | 2026-11-18 | Positioning and name | A Boise business already lists fresh strawberry milk. “Milk Bar” remains an internal label pending clearance. |
 
@@ -117,6 +117,19 @@ Read the [market report](research/round-1-market-research.md), [dated source reg
 - Dairy comparisons are offered at posted prices abroad. In Boise, a shared flight could earn its place as an outing even if guests buy it only once. Track the paying party, later drink purchases and the extra minutes needed for each flight. [Round 1 comparison](research/round-1-market-research.md)
 - A busy milk stand may have another payer. The Minnesota fair stand’s low price and reported losses illustrate why sponsor support, refills and individual transactions need separate treatment. [MPR reporting](https://www.mprnews.org//story/2026/09/04/minnesota-state-fair-all-you-can-drink-milk-stand-has-only-increased-2-90-in-70-years)
 
-**Next decision for Charles:** decide whether to authorize Round 2 for one host-based format and specify the minimum return per owner-hour and maximum cash/time at risk. Host access, regulatory classification, recipe quality, prices, repeat demand and actual profitability remain open. See the [portfolio lessons](../../playbook/lessons-learned.md).
+## Round 2 decision · November 18, 2026
+
+Charles authorized the feasibility work and delegated site selection and economic judgment. He specified no compensation hurdle or spending cap. A future operator may take over the concept. The workbook reports the money available per total working hour and includes an optional Boise wage comparison.
+
+| Decision | Current position |
+|---|---|
+| Recurring retail | Prioritize a partnership with an existing counter. The Warehouse Food Hall is the first named lead. Neither a specific vendor nor the venue has agreed. |
+| Discovery | Preserve a separately priced, prepaid group tasting. Flava Kitchen is the first named facility lead. The posted kitchen rate can overwhelm ordinary retail earnings. |
+| Standalone and market | Hold both. Full-day market fees, eligibility and labor weaken the market case. A dedicated site adds unpriced fixed costs and buildout. |
+| Licensing | CDH Food Safety confirmed receipt of a preliminary inquiry. The reply, operator-specific approval, host terms and Boise site determination remain open. |
+| Operator economics | Forty illustrative host orders leave at most $154.73 per session, 20 downside orders $69.34, before unquoted charges. No operator has earned these amounts. |
+| Next decision | Reprice the actual host terms, responsibilities and approved setup before deciding whether to authorize field validation. Both customer appeals remain open. |
+
+Read the [feasibility report](research/round-2-feasibility.md), [editable workbook](research/milk-bar-feasibility.xlsx), [sources and assumptions](research/round-2-sources-and-assumptions.md) and [portfolio lessons](../../playbook/lessons-learned.md).
 
 For subsequent rounds, preserve dated sources, positive and negative findings, rejected concepts, revisions to assumptions and economics, decisions and PR/merge status. Follow the [reusable business-idea playbook](../../BUSINESS_IDEA_PLAYBOOK.md).
