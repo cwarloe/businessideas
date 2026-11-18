@@ -4,8 +4,28 @@ set -euo pipefail
 
 build_id="${GITHUB_SHA:-$(git rev-parse HEAD)}"
 site="https://cwarloe.github.io/businessideas/oats-and-more"
-sources=("docs/oats-and-more/index.html" "docs/oats-and-more/release.js")
-urls=("$site/index.html" "$site/release.js")
+sources=(
+  "docs/oats-and-more/index.html"
+  "docs/oats-and-more/design-lab.html"
+  "docs/oats-and-more/research.html"
+  "docs/oats-and-more/menu-board.html"
+  "docs/oats-and-more/vote-admin.html"
+  "docs/oats-and-more/design-assets.js"
+  "docs/oats-and-more/vote-config.js"
+  "docs/oats-and-more/vote-live.js"
+  "docs/oats-and-more/release.js"
+)
+urls=(
+  "$site/index.html"
+  "$site/design-lab.html"
+  "$site/research.html"
+  "$site/menu-board.html"
+  "$site/vote-admin.html"
+  "$site/design-assets.js"
+  "$site/vote-config.js"
+  "$site/vote-live.js"
+  "$site/release.js"
+)
 attempts=24
 
 for ((attempt = 1; attempt <= attempts; attempt++)); do
