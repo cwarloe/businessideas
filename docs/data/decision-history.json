@@ -1,0 +1,200 @@
+{
+  "version": 1,
+  "ideas": [
+    { "id": "oats-etc", "label": "Oats, Etc." },
+    { "id": "fudge", "label": "Fudge" },
+    { "id": "milk-bar", "label": "Milk Bar" }
+  ],
+  "events": [
+    {
+      "id": "milk-bar-2026-11-18-01",
+      "date": "2026-11-18",
+      "idea": "milk-bar",
+      "kind": "decision",
+      "status": "preferred",
+      "title": "Explore milk tastings alongside prepared specialty drinks",
+      "summary": "The working concept combines simple milk-forward offerings, discovery flights and signature drinks. These remain concepts, not validated products.",
+      "why": "The two experiences could appeal to different purchase occasions; neither customer appeal has yet been proven.",
+      "revisitWhen": "Customer interviews and paid tests show which offer people actually buy and return for.",
+      "sources": [
+        { "path": "ideas/milk-bar/README.md", "label": "Milk Bar concept and decision record" }
+      ]
+    },
+    {
+      "id": "milk-bar-2026-11-18-02",
+      "date": "2026-11-18",
+      "idea": "milk-bar",
+      "kind": "decision",
+      "status": "preferred",
+      "title": "Explore a quick-service counter with a small tasting area",
+      "summary": "An express order-and-pickup flow and a two-to-four-person standing tasting ledge are the preferred experience to investigate.",
+      "why": "A small tasting area might support discovery while keeping regular orders fast, but layout, permissions and economics remain unverified.",
+      "revisitWhen": "Regulatory requirements, site dimensions or observed queue times make the format impractical.",
+      "sources": [
+        { "path": "ideas/milk-bar/README.md", "label": "Milk Bar experience and open constraints" }
+      ]
+    },
+    {
+      "id": "milk-bar-2026-11-18-03",
+      "date": "2026-11-18",
+      "idea": "milk-bar",
+      "kind": "experiment",
+      "status": "planned",
+      "title": "Test discovery and repeat-drink appeals before selecting a lead",
+      "summary": "Compare willingness to purchase a tasting flight with willingness to buy a favorite milk-centered drink repeatedly.",
+      "why": "Preference expressed in brainstorming is not evidence of price acceptance or repeat demand.",
+      "revisitWhen": "A defined research sample and actual purchases support a clear lead offer.",
+      "sources": [
+        { "path": "ideas/milk-bar/README.md", "label": "Milk Bar hypotheses and recorded choices" },
+        { "path": "ideas/milk-bar/research-brief-v1.md", "label": "Milk Bar research brief" }
+      ]
+    },
+    {
+      "id": "milk-bar-2026-11-18-04",
+      "date": "2026-11-18",
+      "idea": "milk-bar",
+      "kind": "finding",
+      "status": "unverified",
+      "title": "No external market validation was recorded at archive time",
+      "summary": "The repository contained a concept and a research brief, but no completed field research, sales or verified unit economics.",
+      "why": "The archive must distinguish research intentions from completed research and observed customer behavior.",
+      "revisitWhen": "Dated, source-backed research or real demand-test results are committed.",
+      "sources": [
+        { "path": "playbook/archive-status-2026-11-18.md", "label": "November 18 portfolio inventory" }
+      ]
+    },
+    {
+      "id": "fudge-2026-11-15-01",
+      "date": "2026-11-15",
+      "idea": "fudge",
+      "kind": "hypothesis",
+      "status": "untested",
+      "title": "Explore fudge as a sharing or gifting purchase",
+      "summary": "Sharing occasions, gift-ready packaging and an everyday treat are concept directions under consideration, not a chosen product line.",
+      "why": "The buying occasion may matter as much as the flavor, but customer purchase behavior has not yet selected a direction.",
+      "revisitWhen": "Interviews and a priced offer reveal which occasion attracts paid orders.",
+      "sources": [
+        { "path": "docs/fudge/research/sharing-first-concepts-2026-11-15.md", "label": "Fudge sharing-first concepts" },
+        { "path": "docs/fudge/research/validation-and-decisions.md", "label": "Fudge validation and decisions" }
+      ]
+    },
+    {
+      "id": "fudge-2026-11-15-02",
+      "date": "2026-11-15",
+      "idea": "fudge",
+      "kind": "experiment",
+      "status": "proposed",
+      "title": "Consider a small paid preorder gift-box pilot",
+      "summary": "The research proposes a limited batch of up to twenty 8-ounce boxes with predeclared order, cost and owner-hour thresholds; no launch was approved.",
+      "why": "A paid pilot would test demand and economics more directly than compliments, free samples or visual concepts.",
+      "revisitWhen": "Production requirements and owner budget are confirmed, then the experiment is explicitly approved or rejected.",
+      "sources": [
+        { "path": "docs/fudge/research/validation-and-decisions.md", "label": "Fudge pilot proposal and decision gates" }
+      ]
+    },
+    {
+      "id": "fudge-2026-11-15-03",
+      "date": "2026-11-15",
+      "idea": "fudge",
+      "kind": "decision",
+      "status": "open",
+      "title": "Keep name, recipes, production method and prices undecided",
+      "summary": "The proposed business has not settled its brand, recipe, sale price, capital budget or homemade-versus-partner production model.",
+      "why": "Customer demand, legal requirements and genuine cost estimates should guide commitments.",
+      "revisitWhen": "Source-backed estimates and owner choices resolve these constraints.",
+      "sources": [
+        { "path": "docs/fudge/research/validation-and-decisions.md", "label": "Fudge open decisions" }
+      ]
+    },
+    {
+      "id": "oats-etc-2026-11-11-01",
+      "date": "2026-11-11",
+      "idea": "oats-etc",
+      "kind": "decision",
+      "status": "provisional",
+      "title": "Use Oats, Etc. as a working name",
+      "summary": "The brand direction moved away from Oats & More after a potentially conflicting cereal trademark was identified. Legal clearance is not established.",
+      "why": "The prior name posed potential naming risk; a new URL or attractive name is not proof of trademark availability.",
+      "revisitWhen": "Official and common-law trademark checks establish whether the working name can be used.",
+      "sources": [
+        { "path": "docs/oats-and-more/research/decision-log.md", "label": "Oats naming decision history" },
+        { "path": "playbook/lessons-learned.md", "label": "Naming and trademark lessons" }
+      ]
+    },
+    {
+      "id": "oats-etc-2026-11-11-02",
+      "date": "2026-11-11",
+      "idea": "oats-etc",
+      "kind": "decision",
+      "status": "preferred",
+      "title": "Start with a narrow oatmeal breakfast pilot",
+      "summary": "The current pilot direction focuses on familiar oatmeal and simple toppings; the earlier broader sweet-and-savory breakfast/lunch concept remains a possible later stage.",
+      "why": "A smaller initial menu can reduce preparation, equipment and marketing complexity during validation.",
+      "revisitWhen": "Real customer demand and measured operating capacity justify testing additional products or dayparts.",
+      "sources": [
+        { "path": "docs/oats-and-more/research/decision-log.md", "label": "Oats product-scope decisions" },
+        { "path": "docs/oats-and-more/research/README.md", "label": "Oats research overview and operating principles" }
+      ]
+    },
+    {
+      "id": "oats-etc-2026-11-11-03",
+      "date": "2026-11-11",
+      "idea": "oats-etc",
+      "kind": "decision",
+      "status": "deferred",
+      "title": "Defer major cart or trailer purchases until demand and site are verified",
+      "summary": "An approved recurring location, electrical access, safe operating model and paying customers should come before buying specialized equipment.",
+      "why": "The hosted-site approach weakens the case for an e-bike, while towing limits and fully loaded weight complicate a trailer.",
+      "revisitWhen": "A specific compliant site, actual demand and measured equipment needs justify a purchase.",
+      "sources": [
+        { "path": "docs/oats-and-more/research/decision-log.md", "label": "Oats mobility and location decision" },
+        { "path": "docs/oats-and-more/research/README.md", "label": "Oats experiment-before-equipment principle" }
+      ]
+    },
+    {
+      "id": "oats-etc-2026-11-11-04",
+      "date": "2026-11-11",
+      "idea": "oats-etc",
+      "kind": "hypothesis",
+      "status": "untested",
+      "title": "Thirty bowls before 9 a.m. is a capacity target, not demand evidence",
+      "summary": "The proposed first test aims at thirty servings before 9 a.m.; actual host traffic, conversion, portion yield and one-person throughput remain unknown.",
+      "why": "A volume target alone cannot establish either the size of the market or profitability.",
+      "revisitWhen": "A permitted test measures actual orders, demand denominator, serving times, waste and contribution.",
+      "sources": [
+        { "path": "docs/oats-and-more/research/decision-log.md", "label": "Oats capacity assumptions" },
+        { "path": "playbook/lessons-learned.md", "label": "Capacity and economics lessons" }
+      ]
+    },
+    {
+      "id": "oats-etc-2026-11-11-05",
+      "date": "2026-11-11",
+      "idea": "oats-etc",
+      "kind": "lesson",
+      "status": "documented",
+      "title": "Treat anonymous flavor votes as directional feedback only",
+      "summary": "The existing Cloudflare poll measures browser-based preference, not verified unique buyers or willingness to pay.",
+      "why": "Repeat browsers, self-selection and free-choice behavior prevent vote totals from forecasting paid sales.",
+      "revisitWhen": "A priced offer and repeat purchases provide stronger demand evidence.",
+      "sources": [
+        { "path": "integrations/oats-voting/README.md", "label": "Voting service limitations" },
+        { "path": "playbook/lessons-learned.md", "label": "Poll interpretation lesson" }
+      ]
+    },
+    {
+      "id": "oats-etc-2026-11-11-06",
+      "date": "2026-11-11",
+      "idea": "oats-etc",
+      "kind": "experiment",
+      "status": "planned",
+      "title": "Validate a host site and real breakfast demand before purchasing",
+      "summary": "Seek an office host, clarify food-service and property permissions, then test actual paid demand at a specified price.",
+      "why": "The host and the breakfast customer are separate necessary gates; neither has been validated by the published poll.",
+      "revisitWhen": "A specific location agrees to the proposed arrangement and paid testing yields measured results.",
+      "sources": [
+        { "path": "docs/oats-and-more/research/validation-backlog.md", "label": "Oats validation backlog" },
+        { "path": "docs/oats-and-more/research/README.md", "label": "Oats next experiment" }
+      ]
+    }
+  ]
+}
