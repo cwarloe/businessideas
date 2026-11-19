@@ -36,6 +36,12 @@ Use the IDs in a [copyable gap register](coverage-gap-template.md). The evidence
 
 A forecast should reconcile reachable audience → exposure → paid buyers → orders/frequency → revenue → capacity/cost → cash and operator return. Explain estimates, mismatched time periods and evidence gaps at each link.
 
+## Operating literacy before launch
+
+A08 includes daily orders, stock, quality and customer issue handling. A09 includes the ability to record and reconcile transactions, distinguish earned sales from cash collected, read basic statements, forecast obligations and assess owner return. A10 assigns spending, refund, reconciliation and review responsibility. A12 links actual operating reviews back to the plan.
+
+If the owner has never operated a business, record the learning gap explicitly. Use the [beginner guide](running-the-business.md), [practice month](practice-business-month.md) and [review template](operating-review-template.md) while still at Screen or Assess depth. Understanding these relationships can be practiced before external engagement. Demonstrating the skill is a separate outcome from validating the product's demand.
+
 ## How to record a gap accurately
 
 Track **coverage** separately from **evidence**.

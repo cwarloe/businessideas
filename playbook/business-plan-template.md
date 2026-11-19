@@ -48,6 +48,7 @@ Copy this file to your idea folder as `business-plan.md`. Use it after the first
 [Describe one full transaction from sourcing and customer acquisition through payment, delivery, support or cleanup. Who does each step, and how long does it take? Identify suppliers, equipment, handoffs, maximum volume and the likely bottleneck. List only the permissions or dependencies relevant to the proposed operation and their status.]
 
 **Management and operator:** [ownership, payer, decision responsibilities, skills gaps and any employee costs]  
+**Operating learning and review:** [who can trace a sale to cash, explain the statements, forecast payments and run daily/weekly/monthly checks? Link the [operating guide](https://github.com/cwarloe/businessideas/blob/main/playbook/running-the-business.md), simulation and review record. Assign any learning/bookkeeping gap.]  
 **Operating fallback:** [what happens if volume, supply, staffing or access differs from plan]
 
 ## 4. Economics and funding

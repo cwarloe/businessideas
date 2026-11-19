@@ -89,6 +89,12 @@ A simple weighted score can help compare candidates, but **do not treat a numeri
 
 For each experiment record the denominator, segment, actual price, date, participants, behavior and failure threshold. Distinguish repeat customers from one-time novelty sales.
 
+## Learn to run the business
+
+Use the [beginner operating guide](playbook/running-the-business.md) to learn pricing, transaction records, financial statements and management decisions. Work through the [practice business month](playbook/practice-business-month.md), then use the [operating review](playbook/operating-review-template.md) for a simulation or real period.
+
+An early idea needs an economic screen. Before operating, the person doing the work also needs to manage orders, stock, quality, collections, bills and cash timing. A full set of formal forecasts may wait until the investment or recipient requires it. Financial literacy and reliable records start with the first transaction.
+
 ## Questions that connect research to selling
 
 - **Discovery.** What did the buyer purchase most recently, why then, at what total price, from whom, and who chose or approved it? What happened afterwards? Recruit from the candidate market and record refusals and conflicting evidence. Interview findings guide the next test.

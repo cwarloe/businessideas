@@ -47,3 +47,16 @@ Screen material is available. Assess work remains open across customer selection
 
 **Next owner/date** — OPEN pending choice of learning step.  
 **History** — Record material changed conclusions with source commits. This example documents gaps and creates no sales or approval evidence.
+
+## Running-the-business learning gap
+
+The owner identified limited operating experience and a need to learn financial management. This is a FIRSTHAND learning requirement. It creates no new evidence about demand or achieved profitability.
+
+| Area | Skill to develop | Practice evidence that would close the learning gap |
+|---|---|---|
+| A08 Operating routine | Track prepared versus sold bowls, topping use, waste, a group invoice or separate retail payments, rental fees, delivery promises and all prep/route/cleanup hours. | Walk through one order, stock record, quality exception and cleanup/handoff, assigning responsibility. |
+| A09 Financial records and decisions | Distinguish revenue, cash, inventory, money owed, owner funding/withdrawals and return for all work. | Explain and reconcile the practice month, then simulate this idea's chosen transaction and its next cash obligation. |
+| A10 Control and handoff | Define who sets prices, buys stock, issues refunds, keeps records and checks them. | A simple responsibility record and a completed simulated weekly review. |
+| A12 Business-plan learning loop | Use actual-versus-plan differences to change a decision. | State one supported price, cost, stock or timing change from the simulated review, then update the assumptions. |
+
+Start with the [financial practice month](../../../playbook/practice-business-month.md) and [beginner guide](../../../playbook/running-the-business.md). Use the [operating review](../../../playbook/operating-review-template.md) in SIMULATION status for Oats, Etc.. It should become ACTUAL only when real records exist. Learning ownership and review date remain OPEN. The accounting/tax setup and any professional support need to match the eventual operator and entity. External outreach remains deferred.

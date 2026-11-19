@@ -33,3 +33,14 @@ Use this to interpret an actual assignment or funding request. Record the requir
 For a larger commitment, reconcile monthly demand, revenue, staffing, operating costs and cash. Add balance-sheet, financing and longer-horizon forecasts where called for. Early assessments can leave these explicitly deferred with a trigger. Financial detail cannot remove uncertainty about buyer behavior.
 
 Assess the quality of the work by its traceability, consistency, handling of contrary evidence and usefulness for the decision. No academic grade or universal school-compliance certification is implied.
+
+## Accounting and ongoing management extension
+
+The [running-the-business module](running-the-business.md) addresses the owner's stated learning gap. It builds on MIT's published introductory financial/managerial accounting topics, OpenStax's statement relationships, IRS recordkeeping guidance and SBA management guidance. These support learning to record, reconcile, interpret and act. The module's invented transactions, four lessons, review frequencies and readiness exercises are practical adaptations.
+
+- MIT course topics, Spring 2004. https://ocw.mit.edu/courses/15-501-introduction-to-financial-and-managerial-accounting-spring-2004/pages/lecture-notes/
+- OpenStax financial statement relationships. https://openstax.org/books/principles-financial-accounting/pages/2-1-describe-the-income-statement-statement-of-owners-equity-balance-sheet-and-statement-of-cash-flows-and-how-they-interrelate
+- IRS Publication 583, December 2024 revision. https://www.irs.gov/publications/p583
+- SBA business management. https://www.sba.gov/counseling/manage-your-business/
+
+All accessed November 18, 2026. FDIC materials were also identified, but their direct retrieval was blocked. The module records that limitation. No personalized tax/entity treatment or filing deadline is selected.
