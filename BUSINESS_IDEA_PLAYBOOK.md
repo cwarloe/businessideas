@@ -93,6 +93,8 @@ For each experiment record the denominator, segment, actual price, date, partici
 
 The current Oats and Milk Bar operating examples use Idaho, with Boise/Ada County as a location scenario. Use the [Idaho operating guide](playbook/idaho-startup-and-operations.md) and [obligations register](playbook/idaho-obligations-template.md) to learn registration, tax accounts, records, filing cycles, hiring and local food/site requirements. Choose actual entity, operator and location before assigning duties. The reusable framework keeps jurisdiction as a parameter for future ideas.
 
+The [Idaho legal checklist](playbook/idaho-legal-requirements.md) adds applicable-law, contract and management-practice distinctions, trigger dates, evidence requirements and actual-business questions. Use it to develop the obligations register as the chosen model becomes specific.
+
 ## Learn to run the business
 
 Use the [beginner operating guide](playbook/running-the-business.md) to learn pricing, transaction records, financial statements and management decisions. Work through the [practice business month](playbook/practice-business-month.md), then use the [operating review](playbook/operating-review-template.md) for a simulation or real period.

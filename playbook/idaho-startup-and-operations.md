@@ -4,6 +4,10 @@ Researched November 18, 2026. Idaho is the default jurisdiction for the current 
 
 Use this with the [beginner financial guide](running-the-business.md) and [Idaho obligations register](idaho-obligations-template.md). Learning and assessment can happen before registration. The rows below show what to resolve when preparing to trade, hire, take payments or acquire assets. No entity, bank account, permit or tax account has been created through this research.
 
+## Legal requirements and applicability
+
+Use the [Idaho legal-requirements checklist](idaho-legal-requirements.md) for a trigger-based review of registration, ongoing entity duties, local/food permissions, taxes, employment, safety, accessibility, consumer dealings and data incidents. Record LAW/REGULATION, CONTRACT or MANAGEMENT-PRACTICE as the basis of each task in the obligations register.
+
 ## The business has several separate responsibilities
 
 | Responsibility | What it means in Idaho | When to resolve / evidence to keep |

@@ -31,6 +31,20 @@ Copy into an idea folder when developing an Idaho venture. **Status — PLANNING
 
 Use APPLIES, NOT-APPLICABLE with reason, or OPEN for applicability. Use PLANNED, IN-PROGRESS, COMPLETE with evidence, or OVERDUE for execution. Keep identifiers, employee details, logins and filings private. A link to guidance establishes a source. A completed duty needs its own actual confirmation.
 
+## Legal applicability and evidence
+
+Use the [legal-requirements checklist](idaho-legal-requirements.md) to expand the register for the actual activity.
+
+| Duty | Basis, LAW/REGULATION, CONTRACT or MANAGEMENT-PRACTICE | Applicability reason and authority | Trigger / due date | Responsible role | Actual evidence / status |
+|---|---|---|---|---|---|
+| Wage/hour, classification and youth rules if relevant | | | | | |
+| Eligibility verification and required employee notices | | | | | |
+| Workplace safety and training | | | | | |
+| Applicable public accessibility/service duties | | | | | |
+| Advertising, claims and customer terms | | | | | |
+| Data incidents and applicable notification duties | | | | | |
+| Lease/host/supplier obligations and insurance conditions | | | | | |
+
 ## Cash effect
 
 | Obligation / period | Amount or estimation basis | Cash reserved | Payment date | Source and uncertainty |
