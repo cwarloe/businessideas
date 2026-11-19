@@ -59,3 +59,7 @@ A cash transfer is recorded once in a consolidated forecast. Identify earmarked 
 Explain how the period's profit connects to cash, receivables, inventory, payables and owner movements. Trace a sample order and supplier bill through the records. If a difference remains unexplained, identify the missing record or bookkeeping question before drawing a spending conclusion.
 
 [Beginner operating guide](https://github.com/cwarloe/businessideas/blob/main/playbook/running-the-business.md) · [Practice example](https://github.com/cwarloe/businessideas/blob/main/playbook/practice-business-month.md)
+
+## Idaho default example
+
+Link the [Idaho obligations register](idaho-obligations-template.md) to this period's cash forecast. Record applicable sales/use tax, entity reports, income-tax planning and employment obligations with actual account notices and due dates. Follow the [Idaho guide](idaho-startup-and-operations.md) for sources and conditions. Learning can proceed while setup choices remain OPEN.

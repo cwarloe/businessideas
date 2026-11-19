@@ -4,6 +4,8 @@ Prepared November 18, 2026. This adds financial and operating literacy to the [b
 
 **Learning goal** — Be able to explain what was sold, what was earned, what cash is available and committed, what the business owns/owes, and what action to take next.
 
+**Current jurisdiction example** — Use the [Idaho startup and operations guide](idaho-startup-and-operations.md) and [obligations register](idaho-obligations-template.md) to connect these skills to real agencies and payment cycles. Idaho is the default example. Entity, municipality, health district and sales model determine the actual requirements.
+
 ## Four lessons
 
 | Lesson | Work through | Demonstrate understanding |

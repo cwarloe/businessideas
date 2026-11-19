@@ -86,3 +86,5 @@ Identify who is paid wages, whose time is valued separately, and whether the ass
 **History update:** [material change and supporting commit, using the [shared history format](https://github.com/cwarloe/businessideas/blob/main/playbook/decision-history-format.md)]
 
 **Related records:** [idea brief] · [market research and source log] · [cost model] · [test results] · [decision log]
+
+**Jurisdiction and obligations** — [Idaho by default for current examples; specify actual city/county/district, entity, operator and tax/selling model]. Link a filled [obligations register](https://github.com/cwarloe/businessideas/blob/main/playbook/idaho-obligations-template.md) and use actual notices for payment dates.

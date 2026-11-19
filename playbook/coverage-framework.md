@@ -36,6 +36,10 @@ Use the IDs in a [copyable gap register](coverage-gap-template.md). The evidence
 
 A forecast should reconcile reachable audience → exposure → paid buyers → orders/frequency → revenue → capacity/cost → cash and operator return. Explain estimates, mismatched time periods and evidence gaps at each link.
 
+## Current jurisdiction example
+
+Idaho is the default for the current operating examples. Record the actual city/county/health district, entity, seller and hiring model in A01/A08/A09/A10. Use the [Idaho guide](idaho-startup-and-operations.md) and [obligations register](idaho-obligations-template.md). Recheck those parameters for any future geography.
+
 ## Operating literacy before launch
 
 A08 includes daily orders, stock, quality and customer issue handling. A09 includes the ability to record and reconcile transactions, distinguish earned sales from cash collected, read basic statements, forecast obligations and assess owner return. A10 assigns spending, refund, reconciliation and review responsibility. A12 links actual operating reviews back to the plan.

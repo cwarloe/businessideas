@@ -89,6 +89,10 @@ A simple weighted score can help compare candidates, but **do not treat a numeri
 
 For each experiment record the denominator, segment, actual price, date, participants, behavior and failure threshold. Distinguish repeat customers from one-time novelty sales.
 
+## Idaho as the current jurisdiction example
+
+The current Oats and Milk Bar operating examples use Idaho, with Boise/Ada County as a location scenario. Use the [Idaho operating guide](playbook/idaho-startup-and-operations.md) and [obligations register](playbook/idaho-obligations-template.md) to learn registration, tax accounts, records, filing cycles, hiring and local food/site requirements. Choose actual entity, operator and location before assigning duties. The reusable framework keeps jurisdiction as a parameter for future ideas.
+
 ## Learn to run the business
 
 Use the [beginner operating guide](playbook/running-the-business.md) to learn pricing, transaction records, financial statements and management decisions. Work through the [practice business month](playbook/practice-business-month.md), then use the [operating review](playbook/operating-review-template.md) for a simulation or real period.

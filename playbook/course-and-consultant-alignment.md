@@ -44,3 +44,7 @@ The [running-the-business module](running-the-business.md) addresses the owner's
 - SBA business management. https://www.sba.gov/counseling/manage-your-business/
 
 All accessed November 18, 2026. FDIC materials were also identified, but their direct retrieval was blocked. The module records that limitation. No personalized tax/entity treatment or filing deadline is selected.
+
+## Idaho practical application
+
+The [Idaho operating guide](idaho-startup-and-operations.md) supplies a jurisdiction-specific application for the current examples. Its official registration/tax/labor/food/property sources and retrieval limits are recorded separately. The [obligations register](idaho-obligations-template.md) is our management aid for tracing applicability, actual deadlines and cash impact. It does not represent a university assignment requirement or a completed filing.

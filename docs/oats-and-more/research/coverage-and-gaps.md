@@ -60,3 +60,7 @@ The owner identified limited operating experience and a need to learn financial 
 | A12 Business-plan learning loop | Use actual-versus-plan differences to change a decision. | State one supported price, cost, stock or timing change from the simulated review, then update the assumptions. |
 
 Start with the [financial practice month](../../../playbook/practice-business-month.md) and [beginner guide](../../../playbook/running-the-business.md). Use the [operating review](../../../playbook/operating-review-template.md) in SIMULATION status for Oats, Etc.. It should become ACTUAL only when real records exist. Learning ownership and review date remain OPEN. The accounting/tax setup and any professional support need to match the eventual operator and entity. External outreach remains deferred.
+
+## Idaho operating example
+
+Use the [Idaho guide](../../../playbook/idaho-startup-and-operations.md) and [obligations register](../../../playbook/idaho-obligations-template.md) for the selected operation. Boise/Ada County is a planning scenario. Entity, seller, exact site, applicable tax accounts, employment status and filing dates remain OPEN. A08/A09/A10 close only when the actual setup and evidence are recorded. Existing registration guidance and a prior CDH inquiry supply context, with no registration, tax election or operating approval established for this proposed business.
