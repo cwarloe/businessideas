@@ -16,8 +16,8 @@ This is a **process**, not a claim that any concept has been market-validated. T
 
 1. Copy [new-idea-template.md](playbook/new-idea-template.md) into `ideas/<idea-slug>/README.md`.
 2. In 15 minutes, state the buyer’s job or purchase occasion, sketch two or three offers and set limits on time, cash and risk. Mark assumptions as **HYPOTHESIS**.
-3. In 30 minutes, compare 5–10 actual alternatives (including "do nothing"). Use linked primary sources and customer quotes where possible. State gaps in evidence.
-4. In 15 minutes, write a one-page unit economics model and choose **one** cheap demand experiment. Do not purchase infrastructure yet.
+3. Use about 30 minutes to screen relevant alternatives, likely costs and material constraints. Choose prospective buyers to approach and ask about their most recent relevant purchase. Record whom you reached, what happened and the limits of that sample.
+4. Use about 15 minutes for a rough economic screen and choose the next question to resolve through discovery or a small test. These timeboxes create a first draft. Primary evidence and quotes may take longer.
 5. Add a dated decision-log entry and source register. Save all work before switching chats, models, or agents.
 
 ## Start with the customer’s options
@@ -46,16 +46,16 @@ Before a research round, name one decision the work should unlock and the two or
 
 | Stage | Main question | Minimum deliverable | Move forward when… |
 |---|---|---|---|
-| 0 · Intake | Does this fit Charles's goals, time, money and abilities? | One-page idea brief; target customer; hard constraints | Clear customer and feasible time/capital ceiling |
-| 1 · Problem | What job, preference or occasion drives the purchase? | Customer/problem statement, current alternatives, interview plan | Some first-hand evidence of a meaningful reason to buy |
-| 2 · Market & channel | Who buys, where can they be reached, why now? | Competitor/substitute table, local/national scope, reachable customer channel, sources | A plausible path to a *specific* group of buyers |
-| 3 · Economics | Can it earn enough to justify effort and risk? | Price, variable cost, margin, fixed cost, capex, downside sensitivity, owner-hours | A plausible profitable scenario **and** a cheap way to test it; no invented price/cost confidence |
-| 4 · Feasibility | Can it legally and practically be delivered? | Regulatory/IP checklist, operational bottlenecks, required approvals and dependencies | No unresolved *fatal* gate before taking the next proposed action |
-| 5 · Demand test | Will people actually pay? | Test design, sample, price, success/fail threshold, recorded observations | Customer behaviors meet a **pre-registered** threshold—not just positive reactions |
-| 6 · Pilot | Can the promised result be delivered repeatedly? | Small compliant pilot, actual labor/throughput/waste/retention and P&L | Real performance supports continuation, adjustment, or a pivot |
-| 7 · Build/scale | Which investments now remove a proven constraint? | Prioritized build plan, updated risk register, postmortem | Evidence justifies spending; prior tests and lessons are archived |
+| 0 · Intake | What outcome and limits govern this exploration? | Brief, owner/operator, cash/time limits and next decision | The purpose and permitted next work are clear. Unset earnings targets stay open. |
+| 1 · Discovery and early screen | What prompts a real purchase, and what could make delivery impractical? | Recent-purchase conversations, brief competitor scan and initial cost/access/permission check | A candidate segment has a credible reason to buy and no known fatal obstacle to the next action. |
+| 2 · First segment and offer | Who gets the first offer, why switch, and how does a sale happen? | Compare segments and offers, reachable audience and access owner, price hypothesis, positioning and first sales route | One offer is specific enough to price and test. Record why other options wait. |
+| 3 · Delivery and economic design | Can the complete transaction work and pay? | Quotes, operating process, acquisition work, capacity, cash timing, base/downside model and dependencies | There is a plausible viable case and an affordable way to resolve the biggest uncertainty. |
+| 4 · Demand test | Will the defined buyer commit at a workable price? | Price, audience, budget, denominator, decision date, thresholds and outcomes | Paid evidence supports a properly authorized pilot. Resolve requirements appropriate to the proposed activity. |
+| 5 · Pilot and repeat | Can we deliver, earn and win another purchase? | Actual sales, all work hours, costs, waste, acquisition and repeat results | Measured performance supports continuation or a specific revision. |
+| 6 · Investment and handoff | What commitment does the evidence justify? | Updated working plan, owner/operator responsibilities, cash needs and prioritized investment | Expected returns and downside justify the next commitment. |
+| 7 · Replicate or expand | Does the model work beyond the first occasion? | Repeatable operating and sales process, staffing, finance and postmortem | Evidence supports the new channel, site or product and its added costs. |
 
-**The stages may loop.** A legal or trademark red flag can arise at intake; a rough financial screen belongs near the beginning, not after months of design. "Not yet verified" is a valid gate outcome.
+Customer discovery, rough economics and feasibility run together from stage 1. Revisit them when the offer changes. Interviews can proceed while a selling permission remains open. A paid test or service must meet the requirements applicable to that activity. The working plan starts as a hypothesis and is revised at every stage.
 
 ### Profit screen for every idea
 
@@ -82,6 +82,22 @@ A simple weighted score can help compare candidates, but **do not treat a numeri
 | Repeated purchases with positive actual margin | Much stronger operating validation |
 
 For each experiment record the denominator, segment, actual price, date, participants, behavior and failure threshold. Distinguish repeat customers from one-time novelty sales.
+
+## Questions that connect research to selling
+
+- **Discovery.** What did the buyer purchase most recently, why then, at what total price, from whom, and who chose or approved it? What happened afterwards? Recruit from the candidate market and record refusals and conflicting evidence. Interview findings guide the next test.
+- **Target and position.** Which segment has a reachable buying occasion, and why start there? State the promise and proof compared with its existing alternative. Identify payer, user, approver and access owner.
+- **Market size.** Estimate eligible people or organizations in the actual service area, those you can reach in the period, likely paid conversion and purchase frequency. Cap orders by operational capacity. Label every assumption and account for seasonality.
+- **Marketing and sales.** Connect product, price, place and promotion decisions. Describe awareness, inquiry, quote/order, payment, delivery and reorder. Assign responsibility, cash budget and time to each step. Include the partner's reason to participate.
+- **Acquisition and retention.** Track acquisition cash and hours per first paying customer by channel. Compare repeat contribution with acquisition cost and show the time needed to earn it back. Use bounded scenarios until real repeat data exists.
+- **Cash and management.** Identify who owns the venture, who operates it, who receives wages or profit, and what skills need covering. Show when suppliers and customers are paid and how much cash could be tied up before receiving revenue.
+- **Research stopping rule.** Continue a research task while its result could alter the next commitment. Once the remaining question requires a buyer response, quote or measured delivery, make that the next task and record uncertainty.
+
+Use the action block at the top of the [working plan](playbook/business-plan-template.md) for the next decision, buyer/access route, owner, price, time/cash limit, thresholds and review date. Derive thresholds from contribution and capacity. Include an inconclusive outcome for insufficient or conflicting evidence.
+
+## Formal coursework or funding extension
+
+For a class project or a larger financial commitment, add a market and customer research appendix, explicit segmentation and positioning, a coordinated marketing mix and acquisition plan, management responsibilities, a monthly cash forecast, and a short presentation defending the recommendation. Formal financial statements and longer forecasts depend on the assignment or funding audience. Keep forecast assumptions visible. Use peer feedback and test results to revise the same plan. See the [consultant review and course comparison](playbook/consultant-review-2026-11-18.md) for primary sources and suggested deliverables.
 
 ## Research and review method
 

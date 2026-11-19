@@ -70,6 +70,8 @@
 
 - Base, low-demand and adverse-cost scenarios: [...]
 - Cash needed until break-even: [...]
+- Cash receipts and payments by week or month, including inventory/deposits, tax and payment delays: [...]
+- Management/ownership, person doing the work, employee costs and skills gaps: [...]
 - Maximum plausible downside: [...]
 - Compare with at least two lower-capital models: [...]
 - **Do NOT call revenue profit.** Unverified price/volume/cost must remain a scenario input.
@@ -105,7 +107,16 @@
 
 Keep abandoned names, channels, product variants and equipment options here; don't delete failed ideas from history.
 
-## 8. Marketing and prototypes
+## 8. Marketing, sales and prototypes
+
+- First target segment and reason to prioritize it: [...]
+- Customer's recent purchase, actual substitute, and proof of our reason to switch: [...]
+- Product, price, place and promotion choices that fit that segment: [...]
+- Acquisition route, access owner, cash budget and selling hours: [...]
+- Qualified exposure → inquiry → paid customer → repeat purchase, with period and denominators: [...]
+- Acquisition cash/time per new buyer, contribution payback and reorder process: [...]
+- Research recruitment, refusals, price objections and sampling limitations: [...]
+
 
 - Positioning angles considered: [...]
 - Name/trademark status: [preliminary screen vs legal clearance]
