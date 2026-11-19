@@ -110,6 +110,6 @@ Never call gross sales profit. Earlier illustrative price/cost examples from bra
 
 Read [Research Brief v1.0](research-brief-v1.md). **Round 1 is competitive-market and customer research only.** Rounds 2–3 will cover sourced financial feasibility and actual demand tests. No research outputs have yet been inserted into this folder.
 
-Before ending any subsequent session, preserve both **positive and negative results**, dated sources, assumption changes, rejected concepts, decisions, revised economics and PR/merge status. Use the [reusable business-idea playbook PR #12](https://github.com/cwarloe/businessideas/pull/12) while that playbook remains unmerged.
+Before ending any subsequent session, preserve both **positive and negative results**, dated sources, assumption changes, rejected concepts, decisions, revised economics and PR/merge status. Use the [reusable business-idea playbook](../../BUSINESS_IDEA_PLAYBOOK.md).
 
-**Next action:** Run Round 1 with explicit Boise competitor/substitute coverage, analogous businesses beyond Boise, clear demand hypotheses, and a skeptical profit lens. Do not design/publish a website or buy equipment based on the research report alone.
+**Next action:** Use the [customer discovery brief](research/next-decision-brief.md) to compare immediate drinking, take-home pickup and delivery occasions. The [Round 1 report](https://github.com/cwarloe/businessideas/pull/15) and [Round 2 assessment](https://github.com/cwarloe/businessideas/pull/16) are research records on open PRs. Use the [current playbook](../../BUSINESS_IDEA_PLAYBOOK.md) and record the discovery outcome before choosing the next paid test.

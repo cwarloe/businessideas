@@ -4,6 +4,10 @@
 **Scope:** All the naming, concept-design, market, food-cart, trailer, food-service, and sales-model brainstorming in the current development conversation.  
 **Status:** Working hypotheses, **not** an operating plan cleared by a trademark attorney, City of Boise, Central District Health, property owner, or trailer manufacturer.
 
+## Current next decision
+
+Use the [office-buyer discovery brief](next-decision-brief.md) to decide whether a prepaid oatmeal breakfast is worth pricing for a specific occasion. This proposed round includes recent-purchase questions, a suggested timebox and decision rules. Record actual work in the [run template](../../../playbook/discovery-and-test-run-template.md). The [later office economics assessment](https://github.com/cwarloe/businessideas/pull/17) is a scenario model awaiting buyer requirements and actual quotes.
+
 ## Published research overview
 
 - [Public-facing Boise kitchen and office breakfast research page](../research.html) — accessible from the Oats, Etc. homepage, with linked sources and next-step recommendations.
