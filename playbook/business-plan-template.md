@@ -6,6 +6,8 @@ Copy this file to your idea folder as `business-plan.md`. Use it after the first
 **Decision sought:** [continue research / run a small test / pilot / invest / pivot / stop]  
 **Commitment requested:** [cash, operator hours and date of next review]
 
+**Coverage and gaps** — [link to this idea's register, current depth, evidence cutoff and unresolved NOW items]. Copy the [gap-register template](https://github.com/cwarloe/businessideas/blob/main/playbook/coverage-gap-template.md) and consult the [course alignment](https://github.com/cwarloe/businessideas/blob/main/playbook/course-and-consultant-alignment.md).
+
 ## Next decision and action
 
 | Field | Entry |

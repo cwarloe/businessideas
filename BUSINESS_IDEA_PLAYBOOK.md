@@ -4,6 +4,12 @@
 
 This is a **process**, not a claim that any concept has been market-validated. The record of a particular idea belongs in that idea's folder. Start with the [new-idea template](playbook/new-idea-template.md), read the [Oats lessons](playbook/lessons-learned.md), and review the [portfolio inventory](playbook/archive-status-2026-11-18.md).
 
+## Coverage, depth and visible gaps
+
+Use the [coverage framework](playbook/coverage-framework.md) to move through Screen, Assess, Validate and Formalize at the depth needed for the next decision. It maps twelve topics to the [published course and consultant sources](playbook/course-and-consultant-alignment.md). Copy the [gap-register template](playbook/coverage-gap-template.md) into each idea folder. Record coverage separately from the strength of its evidence, then prioritize gaps by the decision they affect.
+
+The [Oats example](docs/oats-and-more/research/coverage-and-gaps.md) and [Milk Bar example](ideas/milk-bar/research/coverage-and-gaps.md) show substantial desk research alongside unverified customer, delivery and economic assumptions. Use them as worked applications. A written section can remain assumption-based. Close its gap against a stated evidence requirement and preserve the result, including a negative or inconclusive finding.
+
 ## Five operating principles
 
 1. **Find a customer and a reason they would buy.** Look for a recurring problem, a convenience or a purchase occasion you can reach. Mockups help describe the offer. Paid behavior tests it.
@@ -16,7 +22,7 @@ This is a **process**, not a claim that any concept has been market-validated. T
 
 1. Copy [new-idea-template.md](playbook/new-idea-template.md) into `ideas/<idea-slug>/README.md`.
 2. In 15 minutes, state the buyer’s job or purchase occasion, sketch two or three offers and set limits on time, cash and risk. Mark assumptions as **HYPOTHESIS**.
-3. Use about 30 minutes to screen relevant alternatives, likely costs and material constraints. Choose prospective buyers to approach and ask about their most recent relevant purchase. Record whom you reached, what happened and the limits of that sample.
+3. Use about 30 minutes to screen relevant alternatives, likely costs and material constraints. Identify what evidence exists about recent purchases and what remains unknown. Choose a learning method suitable to the question and founder readiness, then record its scope and limits.
 4. Use about 15 minutes for a rough economic screen and choose the next question to resolve through discovery or a small test. These timeboxes create a first draft. Primary evidence and quotes may take longer.
 5. Add a dated decision-log entry and source register. Save all work before switching chats, models, or agents.
 
@@ -47,7 +53,7 @@ Before a research round, name one decision the work should unlock and the two or
 | Stage | Main question | Minimum deliverable | Move forward when… |
 |---|---|---|---|
 | 0 · Intake | What outcome and limits govern this exploration? | Brief, owner/operator, cash/time limits and next decision | The purpose and permitted next work are clear. Unset earnings targets stay open. |
-| 1 · Discovery and early screen | What prompts a real purchase, and what could make delivery impractical? | Recent-purchase conversations, brief competitor scan and initial cost/access/permission check | A candidate segment has a credible reason to buy and no known fatal obstacle to the next action. |
+| 1 · Discovery and early screen | What prompts a real purchase, and what could make delivery impractical? | Recent-purchase evidence or explicit discovery gap, brief competitor scan and initial cost/access/permission check | A candidate segment has a credible reason to buy and no known fatal obstacle to the next action. |
 | 2 · First segment and offer | Who gets the first offer, why switch, and how does a sale happen? | Compare segments and offers, reachable audience and access owner, price hypothesis, positioning and first sales route | One offer is specific enough to price and test. Record why other options wait. |
 | 3 · Delivery and economic design | Can the complete transaction work and pay? | Quotes, operating process, acquisition work, capacity, cash timing, base/downside model and dependencies | There is a plausible viable case and an affordable way to resolve the biggest uncertainty. |
 | 4 · Demand test | Will the defined buyer commit at a workable price? | Price, audience, budget, denominator, decision date, thresholds and outcomes | Paid evidence supports a properly authorized pilot. Resolve requirements appropriate to the proposed activity. |

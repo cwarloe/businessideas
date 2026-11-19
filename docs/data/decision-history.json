@@ -7,6 +7,40 @@
   ],
   "events": [
     {
+      "id": "milk-bar-2026-11-18-05",
+      "date": "2026-11-18",
+      "idea": "milk-bar",
+      "kind": "finding",
+      "status": "documented",
+      "title": "Map Milk Bar research coverage and remaining evidence gaps",
+      "summary": "The reusable assessment distinguishes customer occasions, cup/flight scenarios and less-developed take-home or delivery models. No format has demonstrated paid repeat demand in the reviewed records.",
+      "why": "A complete research document can still depend on assumed demand, operating terms and labor. The next commitment needs the relevant gaps visible.",
+      "revisitWhen": "A chosen offer, new buyer evidence, supplier/site terms or measured performance changes the assessment.",
+      "sources": [
+        {
+          "path": "ideas/milk-bar/research/coverage-and-gaps.md",
+          "label": "Milk Bar coverage and evidence gaps"
+        }
+      ]
+    },
+    {
+      "id": "oats-etc-2026-11-18-01",
+      "date": "2026-11-18",
+      "idea": "oats-etc",
+      "kind": "finding",
+      "status": "documented",
+      "title": "Map Oats research coverage and remaining evidence gaps",
+      "summary": "The assessment records existing desk research and scenario models alongside missing buyer selection, complete service economics, operating determinations and paid test results.",
+      "why": "Selecting a buyer and occasion gives the pricing, acquisition and delivery model a consistent transaction to assess.",
+      "revisitWhen": "Actual buyer requirements, costs, operating timing or test evidence changes the decision.",
+      "sources": [
+        {
+          "path": "docs/oats-and-more/research/coverage-and-gaps.md",
+          "label": "Oats coverage and evidence gaps"
+        }
+      ]
+    },
+    {
       "id": "milk-bar-2026-11-18-01",
       "date": "2026-11-18",
       "idea": "milk-bar",

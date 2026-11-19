@@ -56,3 +56,7 @@ External regulations, fee schedules, equipment specifications and market prices 
 - Site: https://cwarloe.github.io/businessideas/oats-and-more/
 - Design studio: https://cwarloe.github.io/businessideas/oats-and-more/design-lab.html
 - Brand domain under consideration: `oatsetc.com` — **registration, ownership and DNS hookup not verified in this record**.
+
+## Current framework example and gaps
+
+The [Oats coverage register](coverage-and-gaps.md) maps the research, scenarios and open customer/operating questions to the reusable framework. It distinguishes written proposals from actual cost, demand and repeat evidence and identifies the depth needed for the next decision. See the [course/consultant alignment](../../../playbook/course-and-consultant-alignment.md).

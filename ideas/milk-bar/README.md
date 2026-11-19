@@ -113,3 +113,7 @@ Read [Research Brief v1.0](research-brief-v1.md). **Round 1 is competitive-marke
 Before ending any subsequent session, preserve both **positive and negative results**, dated sources, assumption changes, rejected concepts, decisions, revised economics and PR/merge status. Use the [reusable business-idea playbook](../../BUSINESS_IDEA_PLAYBOOK.md).
 
 **Next action:** Use the [customer discovery brief](research/next-decision-brief.md) to compare immediate drinking, take-home pickup and delivery occasions. The [Round 1 report](https://github.com/cwarloe/businessideas/pull/15) and [Round 2 assessment](https://github.com/cwarloe/businessideas/pull/16) are research records on open PRs. Use the [current playbook](../../BUSINESS_IDEA_PLAYBOOK.md) and record the discovery outcome before choosing the next paid test.
+
+## Current framework example and gaps
+
+The [Milk Bar coverage register](research/coverage-and-gaps.md) maps the current evidence to the reusable framework. It preserves cups, warm service, take-home pickup and delivery as candidate offers and identifies what is still missing for each decision. See the [source alignment](../../playbook/course-and-consultant-alignment.md) for the consultant/course basis.

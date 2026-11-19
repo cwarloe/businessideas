@@ -9,6 +9,8 @@
 **Current status:** [HYPOTHESIS / SOURCE-RESEARCHED / FIELD-TESTED / REJECTED / DEFERRED]  
 **Live demo:** [URL, or NONE] · **Source branch/PR/commit:** [link, or NONE] · **On main?** [yes/no]
 
+**Coverage and gaps:** [link to this idea's register]. Use the [coverage framework](https://github.com/cwarloe/businessideas/blob/main/playbook/coverage-framework.md) to select depth and the [gap-register template](https://github.com/cwarloe/businessideas/blob/main/playbook/coverage-gap-template.md) to record missing evidence.
+
 ## 1. The opportunity
 
 - **The customer:** [specific buyer and user, if different]
