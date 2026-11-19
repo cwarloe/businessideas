@@ -54,3 +54,19 @@ After the earlier GitHub Pages/domain confusion, the repository added a source-t
 ## What is still *not* learned
 
 There has been **no documented paid Oats field trial**, no verified office host contract, no completed regulator determination for the specific recurring office setup, no completed trademark clearance, and no real cost/retention dataset. Do not turn the above lessons into claims that a profitable operation has been proven.
+
+## November 18 follow-up: keep the offer open until the evidence distinguishes it
+
+- **The question drifted from “would someone buy milk?” to “would an oatmeal buyer add cocoa?”** The second model was useful for bundling. The customer, occasion and evidence needed for a milk stand or recurring milk order are different. Write those down before choosing what to cost or promote. [Milk Bar feasibility](https://github.com/cwarloe/businessideas/pull/16) · [Oats office comparison](https://github.com/cwarloe/businessideas/pull/17)
+- **The selling format can drive earnings more than the product change.** In the Oats model, shortening service by using one employer delivery changed the modeled return per hour more than adding the drink to a staffed shift. Test the sales channel and count the whole job, from finding the buyer through cleanup. Actual route time, price and demand remain unverified. [Oats office comparison](https://github.com/cwarloe/businessideas/pull/17)
+- **Founder flexibility is useful.** Agree on constraints first. Compare paid choices and repeat behavior before committing to a product format. Preserve the actual result and the options it leaves open in the next version of the [working business plan](business-plan-template.md).
+
+## Consultant review follow-up · November 18, 2026
+
+The independent AI reviewer found the overall evidence-and-economics approach useful. The first-hour desk screen could still encourage selecting an offer before speaking with real buyers. Begin recent-purchase discovery and the cheapest operating constraints together, then choose a first segment and price the full acquisition-to-reorder process. Track cash timing as well as profit and operator hours. Avoid counting acquisition labor both in a separate cost and again in operator-time valuation.
+
+Published entrepreneurship and marketing courses emphasize explicit targeting, customer acquisition, marketing strategy, management, financial planning and defending a recommendation. The playbook now includes those questions, a next-decision block and an optional formal extension. These changes improve the process. Field evidence is still needed for Oats and Milk Bar. [Review and primary-source comparison](consultant-review-2026-11-18.md)
+
+## Following the merged history · November 18, 2026
+
+The new decision-history record in PR #19 supplies stable event IDs, rationale, evidence status and revisit triggers. Connect the playbook to it and append material changes once the supporting notes are saved. Verify main and open PRs separately. For each experiment, prewrite counting rules and disconfirming evidence, distinguish a demand failure from an economic failure, and record time/cash to the resulting decision. An operation that only just meets its earnings threshold warrants stress-testing for routine setbacks. [History conventions](decision-history-format.md)

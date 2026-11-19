@@ -9,16 +9,26 @@
 **Current status:** [HYPOTHESIS / SOURCE-RESEARCHED / FIELD-TESTED / REJECTED / DEFERRED]  
 **Live demo:** [URL, or NONE] · **Source branch/PR/commit:** [link, or NONE] · **On main?** [yes/no]
 
+**Coverage and gaps:** [link to this idea's register]. Use the [coverage framework](https://github.com/cwarloe/businessideas/blob/main/playbook/coverage-framework.md) to select depth and the [gap-register template](https://github.com/cwarloe/businessideas/blob/main/playbook/coverage-gap-template.md) to record missing evidence.
+
 ## 1. The opportunity
 
 - **The customer:** [specific buyer and user, if different]
-- **Pain/job and urgency:** [what repeatedly goes wrong, is expensive, embarrassing or inconvenient?]
+- **Job, desire or occasion:** [what prompts the purchase and why would it happen again?]
 - **How they solve it now:** [substitutes including do-nothing]
 - **One-sentence offer:** [what changes in customer's life/work]
 - **Reason to believe it will matter:** [real observation, interviews, otherwise HYPOTHESIS]
 - **My motivation/fit:** [strengths, interests, skill, stewardship]
 - **Geography/channel:** [where customers can actually be reached]
 - **Long-term concept vs minimal pilot:** [keep these clearly different]
+
+| Offer to compare | Buyer and buying occasion | Product, price and how it is sold | Why switch or return? | Evidence that would decide |
+|---|---|---|---|---|
+| [offer] | [...] | [...] | [...] | [...] |
+| [alternative] | [...] | [...] | [...] | [...] |
+
+**Current offer to test:** [choice and reason, or OPEN]  
+**Working business plan:** [link when ready]. Use the [business plan template](https://github.com/cwarloe/businessideas/blob/main/playbook/business-plan-template.md) after initial market and cost screening.
 
 ## 2. Hard constraints and success criteria
 
@@ -62,6 +72,8 @@
 
 - Base, low-demand and adverse-cost scenarios: [...]
 - Cash needed until break-even: [...]
+- Cash receipts and payments by week or month, including inventory/deposits, tax and payment delays: [...]
+- Management/ownership, person doing the work, employee costs and skills gaps: [...]
 - Maximum plausible downside: [...]
 - Compare with at least two lower-capital models: [...]
 - **Do NOT call revenue profit.** Unverified price/volume/cost must remain a scenario input.
@@ -87,6 +99,10 @@
 |---|---|---|---|---|---|---|
 | [date] | [...] | [...] | [...] | [...] | NOT RUN | [...] |
 
+**Before running:** [rank two or three uncertain assumptions by consequence and cost/time to resolve. Choose one, write the exact invitation, eligible audience, price, counting rules, disconfirming evidence, stopping date and cost cap. Record discounts, personal connections and subsidies.]
+
+**After running:** [separate demand-pass/economics-fail from demand-fail/economics-pass. An inconclusive result names the observation and budget needed to resolve it. Review actual time/cash spent and update material changes using the [shared decision-history format](https://github.com/cwarloe/businessideas/blob/main/playbook/decision-history-format.md).]
+
 **Evidence hierarchy:** ideas/surveys < qualified leads < real paid behavior < repeat purchase with positive measured margin. Note the selection bias.
 
 ## 7. Decisions, rejected options and pivots
@@ -97,7 +113,16 @@
 
 Keep abandoned names, channels, product variants and equipment options here; don't delete failed ideas from history.
 
-## 8. Marketing and prototypes
+## 8. Marketing, sales and prototypes
+
+- First target segment and reason to prioritize it: [...]
+- Customer's recent purchase, actual substitute, and proof of our reason to switch: [...]
+- Product, price, place and promotion choices that fit that segment: [...]
+- Acquisition route, access owner, cash budget and selling hours: [...]
+- Qualified exposure → inquiry → paid customer → repeat purchase, with period and denominators: [...]
+- Acquisition cash/time per new buyer, contribution payback and reorder process: [...]
+- Research recruitment, refusals, price objections and sampling limitations: [...]
+
 
 - Positioning angles considered: [...]
 - Name/trademark status: [preliminary screen vs legal clearance]
