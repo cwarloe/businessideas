@@ -1,16 +1,16 @@
 # Milk Bar — Three independent website prototypes
 
-**Prepared:** 2026-11-18 · **Status:** review branch; not published, not market validation.
+**Prepared:** 2026-11-18 · **Published:** 2026-11-19 as an exploratory GitHub Pages prototype, **not** market validation.
 
 [Open the interactive picker](index.html) when previewing the branch locally. Switch between **The Milk Atlas** (discovery), **Velvet Milk** (indulgent signatures) and **Good Milk Co.** (everyday convenience) with the fixed top picker. Use **Compare concepts** for their separate strengths and failure modes. The picker persists the choice locally and supports direct hashes: `#discovery`, `#signature`, `#everyday`.
 
 These are **independent creative strategies**, not three palette swaps: distinct copy, visual identities, customer occasions, ordering hierarchy, signature menus, and calls to action. All three preserve the same underlying quick-service + 2–4-person tasting-ledge concept and the balance of milk-forward and signature drinks.
 
-## Preview without publishing
+## Live prototype
 
-Download or clone this feature branch, then open `docs/milk-bar/index.html` in a browser. The prototype is standalone HTML/CSS/JS with no build step or backend. Google Fonts are optional: fallback fonts work offline. It contains no checkout, email capture, analytics, or real ordering.
+[Open the interactive design picker on GitHub Pages](https://cwarloe.github.io/businessideas/milk-bar/). The prototype is standalone HTML/CSS/JS with no build step or backend. Google Fonts are optional: fallback fonts work offline. It contains no checkout, email capture, analytics, or real ordering.
 
-**Important:** GitHub Pages currently serves `main/docs`; this branch is **not** the live public website. Do not merge or deploy until Charles reviews. To compare on a phone, use a branch-capable preview environment or download the HTML file and open it locally.
+**Important:** This is public concept research material, not an operating business, cleared brand, final menu, or market validation. GitHub Pages serves the `main/docs` directory. The three designs can be compared on phone or desktop.
 
 ## Critique / decision
 
@@ -39,4 +39,4 @@ Download or clone this feature branch, then open `docs/milk-bar/index.html` in a
 
 ## Handoff
 
-Branch: `feature/milk-bar-three-prototypes-20261118`. This is a reviewable checkpoint, not merged. Next: visual QA in real browsers; gather Charles's preference; complete separately sourced Round 1 market/competitor study; use findings to revise copy and decide what to test. Then model actual quoted costs and regulatory requirements before any sales pilot.
+Merged from `feature/milk-bar-three-prototypes-20261118` via [PR #20](https://github.com/cwarloe/businessideas/pull/20). Live desktop checks confirmed all three design switches and the comparison panel. Next: mobile visual QA; gather Charles's preference; complete separately sourced Round 1 market/competitor study; use findings to revise copy and decide what to test. Then model actual quoted costs and regulatory requirements before any sales pilot.
