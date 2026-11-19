@@ -99,7 +99,7 @@ Use the action block at the top of the [working plan](playbook/business-plan-tem
 
 Use the [Oats next-decision brief](docs/oats-and-more/research/next-decision-brief.md) and [Milk Bar next-decision brief](ideas/milk-bar/research/next-decision-brief.md) as worked applications. Each identifies the next decision, ranked uncertainties, a suggested discovery timebox, questions and the evidence needed before a paid trial. Copy the [discovery and test run record](playbook/discovery-and-test-run-template.md) into an idea folder to record one actual round. Assign the person and date when scheduling the work, then evaluate the results against the declared rules.
 
-The [first outreach packet](playbook/discovery-outreach-ready.md) provides verified prospect routes and draft invitations. Its [initial run record](playbook/initial-discovery-run.md) tracks preparation and the pending recruitment stage.
+Choose the next learning method to fit the founder's readiness and the decision at hand. Early work can use existing research, public customer reviews, observation and a walkthrough of the proposed purchase. Record what those methods cannot establish about paid demand. A conversation may be useful before launching, once its purpose and tone fit the founder's intent. Sending requests, recruiting introductions and approaching suppliers are explicit choices. The [outreach draft](playbook/discovery-outreach-ready.md) was deferred after the founder found it premature. The [run record](playbook/initial-discovery-run.md) preserves that correction.
 
 ## Prepare one executable test
 

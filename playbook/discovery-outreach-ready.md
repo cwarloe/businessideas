@@ -1,8 +1,14 @@
-# First discovery round · outreach prepared
+# Deferred outreach draft · preserved for review
 
-November 18, 2026. **Status — prepared for authorization.** Prospects and business contact routes were checked on public primary pages. No messages have been sent for this round and no buyer responses, supplier terms or host permissions have been obtained.
+November 18, 2026. **Status — DEFERRED by owner feedback.** Prospects and business contact routes were checked on public primary pages. No messages have been sent for this round and no buyer responses, supplier terms or host permissions have been obtained.
 
-## Objective and next decision
+## Correction following owner feedback
+
+The founder judged these proposed messages too forward for the current stage. The assistant selected recipients and framed business intentions before confirming the desired level of external engagement. The consultant's recommendation to learn from customers early did not specify these recipients or require this outreach campaign. No requests in this packet were sent. Retain the drafts as history. Revisit outreach only if the founder chooses an external learning step with an appropriate purpose, audience and tone.
+
+The immediate process task is to review the existing evidence and walk through each possible purchase, identifying the uncertainty most worth resolving. Public reviews and observation may help frame it. Mark customer willingness to pay and actual operating performance as unresolved until suitable evidence exists.
+
+## Earlier objective and next decision
 
 Oats needs a conversation with someone who recently ordered an office breakfast. Milk needs conversations about actual milk purchases and a supplier's terms for a possible resale model. Building managers and community operators can introduce potential buyers. Their willingness to forward an invitation establishes access. Record customer behavior from the introduced person separately.
 
@@ -71,7 +77,7 @@ Use the relevant idea's existing questions. Ask about recent behavior before des
 
 ## Work and stopping rules
 
-1. Obtain authorization for these specific outgoing messages, including use of Charles's name and reply contact. This packet prepares messages for review.
+1. This sequence is deferred. Revisit the need for external engagement and agree its purpose, recipient and tone before preparing a new request.
 2. Send the approved initial requests once, using the verified official routes. Record date, actual message version, destination and status privately. Further follow-ups can be authorized with the initial messages.
 3. Start the suggested two-hour discovery budget when recruitment begins. Log time used for finding contacts, outreach, conversation and notes.
 4. Review qualified observations against each idea brief. If nobody responds, record a recruitment result and choose a different access route before inferring lack of product demand.

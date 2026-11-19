@@ -7,7 +7,7 @@ Copy this file into the idea folder for a particular run. Keep the plan and resu
 **Idea, run ID, owner and start date** — Oats and Milk discovery recruitment, initial-outreach-01, Charles (proposed sender), start pending authorization  
 **Decision and review date** — Can we reach qualified buyers through these routes? Review after the proposed two-hour round once started. Calendar date pending scheduling.  
 **Stage** — discovery recruitment and supplier feasibility  
-**Status** — proposed, messages prepared  
+**Status** — DEFERRED after owner feedback that the outreach was premature  
 **Question and competing explanations** — [...]  
 **What would count against the preferred explanation** — [...]  
 **Exact invitation, offer, price and script** — See [prepared outreach](discovery-outreach-ready.md). Conversations seek recent-purchase behavior. No sale price is being offered in recruitment.  
@@ -40,13 +40,13 @@ For discovery, report recent behavior, exact past purchase if known, payer/appro
 
 ## Decision and process review
 
-**Result versus the original rules** — NOT RUN. Preparing contact routes and drafts supplies no customer-demand evidence.  
+**Result versus the original rules** — NOT RUN. Charles judged the outreach too forward at this stage. The proposed recruitment sequence is deferred. Preparing contact routes and drafts supplies no customer-demand evidence.  
 **Decision and supporting evidence** — continue / revise / park / inconclusive  
 **What changed our minds or remains unresolved** — [...]  
 **Actual time and cash spent to reach this decision** — [...]  
 **Spending or work this evidence helped us avoid** — [...]  
 **Could another operator execute the next task from this record?** — [...]  
-**Next task, owner, due date and cap** — Obtain authorization for the prepared outgoing messages. Charles is the proposed sender. Send after authorization, then record replies and the time used.  
+**Next task, owner, due date and cap** — Review existing evidence and the proposed customer purchase experience. Select the next uncertainty and a proportionate learning method with Charles before scheduling external engagement. No outgoing request is pending authorization.  
 **History event ID and evidence commit, for a material change** — [...]
 
 Use the [shared decision-history conventions](https://github.com/cwarloe/businessideas/blob/main/playbook/decision-history-format.md) after saving the supporting notes.
