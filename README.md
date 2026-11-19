@@ -8,6 +8,7 @@ Welcome to the Business Ideas platform repository. This project aims to provide 
 
 ## Business explorations
 
+- [Public decision history](https://cwarloe.github.io/businessideas/decision-history.html) — source-linked timeline of what changed, why, and what still needs testing.
 - [Oats, Etc.](docs/oats-and-more/README.md) — grain-bowl concept, design lab and Boise pilot research.
 - [Fudge](docs/fudge/README.md) — Boise market research, business concepts, pricing scenarios and a small validation plan.
 

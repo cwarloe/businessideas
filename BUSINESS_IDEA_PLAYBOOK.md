@@ -95,6 +95,32 @@ For each experiment record the denominator, segment, actual price, date, partici
 
 Use the action block at the top of the [working plan](playbook/business-plan-template.md) for the next decision, buyer/access route, owner, price, time/cash limit, thresholds and review date. Derive thresholds from contribution and capacity. Include an inconclusive outcome for insufficient or conflicting evidence.
 
+## Prepare one executable test
+
+Before the next round, list the two or three assumptions most likely to change the investment decision. For each, record the consequence of being wrong, current evidence, and cash/time needed to resolve it. Choose the next task by consequence, dependency and cost of learning. A research question may need an interview, supplier quote or measured rehearsal before a paid trial.
+
+Use the existing action block in the working plan. Include the exact invitation or sales script, posted offer and price, who is eligible, how they will be reached, and what would count against the hypothesis. Record invitations, qualified exposure, refusals, paid orders, refunds and repeat opportunities as appropriate. Identify friends, discounts, host subsidies and exceptional events in the results so their effect can be assessed. Set a review date and cap on cash/time. Small or conflicting samples can produce an inconclusive result. Choose the observation that would resolve it and keep any follow-up within an explicit budget.
+
+### Worked example of an economic threshold
+
+Illustrative arithmetic for a delivery offer, with no demand evidence implied. Suppose each $15 order leaves $10 after variable fulfillment and payment costs. Fixed cash expense is $40, all acquisition and operating time totals four hours, and the operator chooses $20/hour. The earnings threshold is ($40 + 4 × $20) / $10 = **12 orders**. Requiring an additional $20 cushion raises it to **14 orders**. One extra hour raises that cushion-preserving threshold to **16 orders**. Compare those thresholds with measured capacity and the number of qualified people who can actually receive the offer. Define the real price, costs, time, cushion and reach before a live test.
+
+The owner's chosen earnings requirement governs the decision. A local wage can help interpret an hourly return when that requirement is unset. Report the return and open decision in that case. Test a credible delay, unsold stock, refund, cancellation or host charge as relevant, and identify the cash loss if the downside occurs.
+
+| Evidence after the test | Next decision |
+|---|---|
+| Demand and full economics meet the thresholds | Repeat within the next agreed commitment, then evaluate retention and consistency. |
+| Demand meets the threshold, economics misses | Change price, cost or delivery time and retest willingness to pay for the revised offer. |
+| Economics per sale works, demand misses | Revisit the buyer, occasion, offer or access channel, or park the idea. |
+| A binding constraint fails or both demand and economics miss | Stop the current commitment and decide whether a specific cheaper revision is justified. |
+| Evidence is insufficient or contradictory | Mark inconclusive, name the missing observation and price the follow-up. |
+
+## Review whether the process is helping
+
+After a round, record hours and cash spent, the consequential uncertainty resolved, the resulting decision, and the evidence that changed it. Ask whether another operator can reproduce the next task from the saved records. Across ideas, look for repeated delays, unreliable assumptions and work that did not affect a decision. Use those findings to simplify the next round.
+
+Once supporting notes are committed, append material decisions, corrections and negative findings to the [shared decision history](playbook/decision-history-format.md). Use its existing IDs, statuses, rationale and revisit trigger. Link changing evidence to its commit or dated original where useful. Preserve the idea notes as the detailed source. Check open PRs as well as main before claiming the history is current.
+
 ## Formal coursework or funding extension
 
 For a class project or a larger financial commitment, add a market and customer research appendix, explicit segmentation and positioning, a coordinated marketing mix and acquisition plan, management responsibilities, a monthly cash forecast, and a short presentation defending the recommendation. Formal financial statements and longer forecasts depend on the assignment or funding audience. Keep forecast assumptions visible. Use peer feedback and test results to revise the same plan. See the [consultant review and course comparison](playbook/consultant-review-2026-11-18.md) for primary sources and suggested deliverables.

@@ -97,6 +97,10 @@
 |---|---|---|---|---|---|---|
 | [date] | [...] | [...] | [...] | [...] | NOT RUN | [...] |
 
+**Before running:** [rank two or three uncertain assumptions by consequence and cost/time to resolve. Choose one, write the exact invitation, eligible audience, price, counting rules, disconfirming evidence, stopping date and cost cap. Record discounts, personal connections and subsidies.]
+
+**After running:** [separate demand-pass/economics-fail from demand-fail/economics-pass. An inconclusive result names the observation and budget needed to resolve it. Review actual time/cash spent and update material changes using the [shared decision-history format](https://github.com/cwarloe/businessideas/blob/main/playbook/decision-history-format.md).]
+
 **Evidence hierarchy:** ideas/surveys < qualified leads < real paid behavior < repeat purchase with positive measured margin. Note the selection bias.
 
 ## 7. Decisions, rejected options and pivots

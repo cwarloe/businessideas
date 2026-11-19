@@ -4,6 +4,7 @@ set -euo pipefail
 
 build_id="${GITHUB_SHA:-$(git rev-parse HEAD)}"
 site="https://cwarloe.github.io/businessideas/oats-and-more"
+portfolio_site="https://cwarloe.github.io/businessideas"
 sources=(
   "docs/oats-and-more/index.html"
   "docs/oats-and-more/design-lab.html"
@@ -14,6 +15,8 @@ sources=(
   "docs/oats-and-more/vote-config.js"
   "docs/oats-and-more/vote-live.js"
   "docs/oats-and-more/release.js"
+  "docs/decision-history.html"
+  "docs/data/decision-history.json"
 )
 urls=(
   "$site/index.html"
@@ -25,6 +28,8 @@ urls=(
   "$site/vote-config.js"
   "$site/vote-live.js"
   "$site/release.js"
+  "$portfolio_site/decision-history.html"
+  "$portfolio_site/data/decision-history.json"
 )
 attempts=24
 
@@ -49,15 +54,15 @@ for ((attempt = 1; attempt <= attempts; attempt++)); do
   done
 
   if [[ "$matched" == true ]]; then
-    echo "Published Oats site matches source commit ${build_id:0:8}."
+    echo "Published Business Ideas assets match source commit ${build_id:0:8}."
     exit 0
   fi
   if ((attempt < attempts)); then sleep 15; fi
 done
 
-echo "ERROR: Published Oats site did not match $build_id after $attempts attempts." >&2
+echo "ERROR: Published Business Ideas assets did not match $build_id after $attempts attempts." >&2
 if [[ -n "${GITHUB_STEP_SUMMARY:-}" ]]; then
-  echo "### Deployment mismatch: Oats, Etc." >> "$GITHUB_STEP_SUMMARY"
-  echo "The live homepage or release script did not match commit \`$build_id\` after retries. Check the GitHub Pages deployment and CDN." >> "$GITHUB_STEP_SUMMARY"
+  echo "### Deployment mismatch: Business Ideas" >> "$GITHUB_STEP_SUMMARY"
+  echo "A live page or asset did not match commit \`$build_id\` after retries. Check the GitHub Pages deployment and CDN." >> "$GITHUB_STEP_SUMMARY"
 fi
 exit 1

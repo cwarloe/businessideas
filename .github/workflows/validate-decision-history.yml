@@ -1,0 +1,34 @@
+name: Validate decision history
+
+on:
+  pull_request:
+    paths:
+      - 'docs/data/decision-history.json'
+      - 'docs/decision-history.html'
+      - 'scripts/validate-decision-history.mjs'
+      - 'playbook/decision-history-format.md'
+      - '.github/workflows/validate-decision-history.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'docs/data/decision-history.json'
+      - 'docs/decision-history.html'
+      - 'scripts/validate-decision-history.mjs'
+      - 'playbook/decision-history-format.md'
+      - '.github/workflows/validate-decision-history.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Validate structured history and source links
+        run: node scripts/validate-decision-history.mjs

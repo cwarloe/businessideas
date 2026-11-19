@@ -54,3 +54,9 @@ These deliverables are our adaptation of the sources above.
 ## Limits of the review
 
 The consultant is an AI agent using the documented material and a requested professional perspective. Its agreement with the previous analysis adds critique and consistency checking. Actual buyer behavior, quotes, operational timing and authority determinations supply the next evidence. Neither idea has demonstrated repeatable profit in the reviewed records. The recommendations do not establish a universal academic grading rubric.
+
+## Follow-up after decision-history merge
+
+The main branch at `bd8c989ba3a5952219306d94e185a16add68f948` includes the selected 13-event decision-history record and its publishing conventions from PR #19. The playbook improvements in PR #18 and research PRs #15–17 were still open when checked. A selected historical index may lag work on research branches. Read its linked sources and check PR state before calling it complete. [Merged history work](https://github.com/cwarloe/businessideas/pull/19)
+
+The reviewer recommends a small extension to the existing action block. Rank the top uncertainties by consequence and cost of learning, write the invitation and counting rules, predeclare evidence that would count against the idea, and distinguish the four combinations of demand/economic outcomes. A worked numerical example makes it easier to derive a meaningful threshold. Add a cushion for plausible operating setbacks and evaluate the process by time/cash to a defensible decision. The shared history already captures rationale, corrections and revisit triggers, so use that record for material decisions.

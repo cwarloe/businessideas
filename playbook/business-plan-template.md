@@ -11,9 +11,11 @@ Copy this file to your idea folder as `business-plan.md`. Use it after the first
 | Field | Entry |
 |---|---|
 | Decision and review date | [proceed / revise / park / inconclusive, YYYY-MM-DD] |
-| Riskiest assumption and evidence needed | [...] |
+| Top uncertainties, consequences and cost/time to resolve | [rank two or three, then choose one] |
+| Selected assumption and disconfirming observation | [what result would count against it?] |
 | First buyer or recruitment/access route | [keep personal contact details in a private record] |
-| Offer, price and next action | [...] |
+| Exact invitation or sales script, offer, price and next action | [...] |
+| Eligible audience and counting rules | [invitations/exposure, refusals, orders, refunds, repeat opportunity; record friends, subsidies and discounts] |
 | Person doing the work and due date | [...] |
 | Maximum cash loss and total work hours | [...] |
 | Demand, earnings and capacity thresholds | [derive from the model, specify the denominator] |
@@ -61,6 +63,7 @@ Copy this file to your idea folder as `business-plan.md`. Use it after the first
 
 Identify who is paid wages, whose time is valued separately, and whether the assumed volume is physically achievable. State labor value and capital recovery assumptions. Include losses from waste, returns, refunds or unsold inventory where relevant. If adding a product or feature, calculate the change versus the existing offer, including any extra time, costs or lost capacity. Explain how each assumption changes the decision. Leave missing costs visible and link the editable model.
 
+**Operating cushion:** [chosen earnings requirement or OPEN, costs of a credible delay/cancellation/waste/host fee, cushion above break-even, and loss in the downside. Count each cost and hour once.]  
 **Cash timing:** [opening cash + customer receipts − payments = closing cash by week or month; include inventory, deposits, tax remittances, equipment and debt where applicable. Record the lowest balance and funding source.]  
 **Formal extension when needed:** [monthly operating/cash forecast and, for the recipient's requirements, income statement, balance sheet, longer forecast and uses of funding. Link the assumptions and sensitivity model.]
 
@@ -70,8 +73,13 @@ Identify who is paid wages, whose time is valued separately, and whether the ass
 
 | Result | Decision |
 |---|---|
-| Meets the demand and economics thresholds | [what to continue and maximum next commitment] |
-| Mixed or unclear | [what to adjust or measure again] |
-| Misses a hard constraint or both thresholds | [what to park, stop or revisit] |
+| Demand and economics pass | [repeat/continue and maximum next commitment] |
+| Demand passes, economics fails | [revise price, cost or delivery time, then retest] |
+| Economics per sale passes, demand fails | [revise segment, occasion, offer or access, or park] |
+| Insufficient or conflicting evidence | [missing observation, follow-up budget and review date] |
+| Binding constraint fails or both thresholds fail | [stop current commitment, park or price a specific revision] |
+
+**Round review:** [hours/cash spent, consequential question resolved, resulting decision, changed evidence, and whether another person can execute the next step]  
+**History update:** [material change and supporting commit, using the [shared history format](https://github.com/cwarloe/businessideas/blob/main/playbook/decision-history-format.md)]
 
 **Related records:** [idea brief] · [market research and source log] · [cost model] · [test results] · [decision log]
