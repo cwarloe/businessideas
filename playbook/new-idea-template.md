@@ -12,13 +12,21 @@
 ## 1. The opportunity
 
 - **The customer:** [specific buyer and user, if different]
-- **Pain/job and urgency:** [what repeatedly goes wrong, is expensive, embarrassing or inconvenient?]
+- **Job, desire or occasion:** [what prompts the purchase and why would it happen again?]
 - **How they solve it now:** [substitutes including do-nothing]
 - **One-sentence offer:** [what changes in customer's life/work]
 - **Reason to believe it will matter:** [real observation, interviews, otherwise HYPOTHESIS]
 - **My motivation/fit:** [strengths, interests, skill, stewardship]
 - **Geography/channel:** [where customers can actually be reached]
 - **Long-term concept vs minimal pilot:** [keep these clearly different]
+
+| Offer to compare | Buyer and buying occasion | Product, price and how it is sold | Why switch or return? | Evidence that would decide |
+|---|---|---|---|---|
+| [offer] | [...] | [...] | [...] | [...] |
+| [alternative] | [...] | [...] | [...] | [...] |
+
+**Current offer to test:** [choice and reason, or OPEN]  
+**Working business plan:** [link when ready]. Use the [business plan template](https://github.com/cwarloe/businessideas/blob/main/playbook/business-plan-template.md) after initial market and cost screening.
 
 ## 2. Hard constraints and success criteria
 

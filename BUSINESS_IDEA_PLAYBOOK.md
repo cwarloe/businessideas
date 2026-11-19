@@ -6,7 +6,7 @@ This is a **process**, not a claim that any concept has been market-validated. T
 
 ## Five operating principles
 
-1. **Find a painful, frequent, reachable problem.** Attractive mockups are not evidence someone will buy.
+1. **Find a customer and a reason they would buy.** Look for a recurring problem, a convenience or a purchase occasion you can reach. Mockups help describe the offer. Paid behavior tests it.
 2. **Check economics early.** A market gap is not necessarily a profitable gap. Count owner's time, spoilage, capital, insurance, rent, payment fees, and working capital. Separate *revenue*, *contribution*, *operating profit*, and *return per owner-hour*.
 3. **Sequence decisions by the cheapest way to disprove them.** Validate customer, channel, legal/operational feasibility and willingness to pay before costly branding, infrastructure or equipment.
 4. **Keep hypotheses and evidence apart.** A survey, casual compliment, published competitor price, verbal host interest, paid preorder and repeat purchase are not interchangeable.
@@ -15,17 +15,39 @@ This is a **process**, not a claim that any concept has been market-validated. T
 ## Quick-start: the next business idea in one sitting
 
 1. Copy [new-idea-template.md](playbook/new-idea-template.md) into `ideas/<idea-slug>/README.md`.
-2. In 15 minutes, fill in customer, problem, proposed solution, distribution channel, startup budget, available hours, desired profit per hour, and kill criteria. Mark guesses as **HYPOTHESIS**.
+2. In 15 minutes, state the buyer’s job or purchase occasion, sketch two or three offers and set limits on time, cash and risk. Mark assumptions as **HYPOTHESIS**.
 3. In 30 minutes, compare 5–10 actual alternatives (including "do nothing"). Use linked primary sources and customer quotes where possible. State gaps in evidence.
 4. In 15 minutes, write a one-page unit economics model and choose **one** cheap demand experiment. Do not purchase infrastructure yet.
 5. Add a dated decision-log entry and source register. Save all work before switching chats, models, or agents.
+
+## Start with the customer’s options
+
+Write a short version of each credible offer before choosing which one to model. For each, record **who pays, what they want in that moment, what they do today, where they can buy, why they would switch and what would bring them back**. Use occasion or preference as well as pain. A treat, convenience or a habit can motivate a purchase. Let the founder choose the limits on cash, time and complexity. Where the founder has no preference, let customer behavior and operating results settle the choice.
+
+| Question | Milk example | What would move the decision |
+|---|---|---|
+| What would they buy for later? | A take-home bottle ordered in advance and collected at a regular stop. | Paid pickups and repeat orders at the proposed price. |
+| What would they buy now? | An individual cup of cold or warm milk at a stand. | Paid cups sold per service hour and purchases across more than one visit. |
+| What would they pay to have delivered? | Several preordered bottles delivered to one office or neighboring households. | Paid orders clustered closely enough to cover the operator’s whole route. |
+
+A new product or channel can change the test. The Oats office model quantified what cocoa could add to a breakfast order. It left open why someone would buy milk on its own. Treat an add-on and a standalone offer as separate hypotheses. When testing two offers at the same stop, use comparable exposure where practical and record who bought each, what they paid and what they later reordered. Document any differences in time, audience or exposure. These are examples for designing a test. The Oats and Milk Bar records remain desk research. [Oats office comparison](https://github.com/cwarloe/businessideas/pull/17) · [Milk Bar feasibility](https://github.com/cwarloe/businessideas/pull/16)
+
+## Turn the research into a working business plan
+
+Start with the [idea template](playbook/new-idea-template.md). After the market and economics pass, copy the [business plan template](playbook/business-plan-template.md) into the idea folder. Use it to make the next investment decision. For each major claim, connect the buyer and offer to the market evidence, how you will reach and serve them, the economics, and the next test. Keep links to detailed research and the cost model so you can update the plan without recopying them.
+
+Before a research round, name one decision the work should unlock and the two or three findings that could change it. Start with a quick screen of real alternatives, prices, suppliers and likely constraints. Deepen the research where a wrong assumption would change the decision. Every round should end with the current best offer, what would overturn it, and the smallest next test with an owner, budget and decision date. Make the choice to proceed, revise, pause or stop explicit. A short plan can govern a small test. A larger investment needs more evidence and a more detailed plan.
+
+### Prompt to start the next idea
+
+> Use this playbook and the new-idea template to develop [idea] for [initial market]. Propose two or three offers for specific buyers and purchase occasions. Compare what buyers do today, who pays, where they can be reached, and what would bring them back. Use dated primary evidence for material facts and preserve the strongest negative findings. Compare the cost and time of the simplest delivery formats with a base and downside case. Identify the assumption most likely to change the decision, and design one small test with a price, audience, budget, pass/fail threshold and decision date. Fill in the working business plan, preserve open decisions and link the evidence. Use the approved scope for research, outreach and spending.
 
 ## Stages and evidence gates
 
 | Stage | Main question | Minimum deliverable | Move forward when… |
 |---|---|---|---|
 | 0 · Intake | Does this fit Charles's goals, time, money and abilities? | One-page idea brief; target customer; hard constraints | Clear customer and feasible time/capital ceiling |
-| 1 · Problem | What unsolved job/pain is the buyer experiencing? | Customer/problem statement, current alternatives, interview plan | At least some first-hand evidence of a meaningful, recurring pain |
+| 1 · Problem | What job, preference or occasion drives the purchase? | Customer/problem statement, current alternatives, interview plan | Some first-hand evidence of a meaningful reason to buy |
 | 2 · Market & channel | Who buys, where can they be reached, why now? | Competitor/substitute table, local/national scope, reachable customer channel, sources | A plausible path to a *specific* group of buyers |
 | 3 · Economics | Can it earn enough to justify effort and risk? | Price, variable cost, margin, fixed cost, capex, downside sensitivity, owner-hours | A plausible profitable scenario **and** a cheap way to test it; no invented price/cost confidence |
 | 4 · Feasibility | Can it legally and practically be delivered? | Regulatory/IP checklist, operational bottlenecks, required approvals and dependencies | No unresolved *fatal* gate before taking the next proposed action |
