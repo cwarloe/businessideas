@@ -43,3 +43,11 @@
 Only move from sketch to purchase after answering: **Where will we serve? How many real buyers are there? What can CDH and the City approve? Can the vehicle safely carry or tow the compliant configuration?**
 
 *These notes preserve user/assistant brainstorms and current research state; they are not claims of completed field validation.*
+
+## November 18, 2026 · Milk and hot chocolate as oatmeal add-ons
+
+**Research recommendation, pending an operator and host decision.** Keep the bowl available alone. For one employer order, investigate 30 classic bowls and one preordered eight-cup hot chocolate batch. Sealed milk is an alternative when drink commitments are sparse. A three-hour staffed office counter at the modeled $80 kitchen fee earns only $8.06 per total operator hour with eight cocoa sales. A single $202.50 group invoice leaves $59.14 before operator pay and omitted costs. It reaches the $16.46 local wage comparison only if all work fits in about 3 hours 36 minutes. Host permission, CDH classification for hot food, actual route hours and paid demand remain open.
+
+**Lesson for future offers.** Charge a full opened batch to the shift and time the entire route. A profitable add-on can raise the order total while the underlying service still pays poorly. Compare it with a premium topping on the same bowl and one preordered group handoff before committing to another station.
+
+[Report and dated sources](oatmeal-milk-and-cocoa-office-breakfast.md) · [Editable model](office-breakfast.xlsx)
