@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#152c31">
+  <meta name="description" content="A source-linked history of decisions, experiments and lessons across the Business Ideas portfolio.">
+  <title>Decision History | Business Ideas</title>
+  <style>
+    :root { color-scheme: light; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f2f5f1; color: #173039; }
+    * { box-sizing: border-box; }
+    body { margin: 0; line-height: 1.55; }
+    a { color: #136d5b; text-underline-offset: 3px; }
+    a:hover { color: #0b4e42; }
+    a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible { outline: 3px solid #f5bd5e; outline-offset: 3px; }
+    .hero { position: relative; overflow: hidden; background: #152c31; color: #f6faf7; padding: 52px 24px 46px; }
+    .hero::after { content: ""; position: absolute; width: 390px; height: 390px; right: -110px; top: -140px; border: 66px solid rgba(125, 204, 166, .13); border-radius: 50%; pointer-events: none; }
+    .wrap { width: min(1060px, 100%); margin: 0 auto; }
+    .eyebrow { color: #b9e1ce; font-size: .76rem; font-weight: 800; letter-spacing: .15em; text-transform: uppercase; margin: 0 0 13px; }
+    h1 { font-size: clamp(2.3rem, 6vw, 4.3rem); line-height: 1.09; max-width: 740px; letter-spacing: -.045em; margin: 0 0 18px; }
+    .intro { font-size: 1.08rem; color: #d6e4e0; max-width: 710px; margin: 0; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 24px; position: relative; z-index: 1; }
+    .hero-actions a { color: #d0f1de; font-weight: 700; }
+    .page { padding: 28px 24px 64px; }
+    .notice { border-left: 4px solid #3e967a; padding: 13px 16px; background: #e2eee7; border-radius: 0 10px 10px 0; margin-bottom: 27px; font-size: .95rem; }
+    .filters { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 13px; background: #fff; padding: 20px; border: 1px solid #d6e0dc; border-radius: 17px; box-shadow: 0 8px 22px rgba(16, 38, 34, .035); }
+    label { display: block; font-size: .78rem; text-transform: uppercase; letter-spacing: .08em; font-weight: 800; color: #48625d; margin-bottom: 7px; }
+    input, select { width: 100%; border: 1px solid #b4c8bf; color: #14342d; background: #fff; border-radius: 9px; min-height: 45px; font: inherit; padding: 10px 12px; }
+    .result-heading { display: flex; align-items: baseline; flex-wrap: wrap; justify-content: space-between; gap: 10px; margin: 34px 0 17px; }
+    h2 { margin: 0; font-size: 1.42rem; letter-spacing: -.025em; }
+    #result-count { color: #4c6660; font-size: .94rem; }
+    .timeline { position: relative; padding-left: 29px; border-left: 2px solid #a8c8ba; margin-left: 10px; }
+    .entry { position: relative; margin: 0 0 17px; padding: 20px 23px; border: 1px solid #d8e3dc; border-radius: 14px; background: #fff; box-shadow: 0 6px 19px rgba(16, 38, 34, .035); }
+    .entry::before { content: ""; position: absolute; width: 12px; height: 12px; border-radius: 50%; left: -37px; top: 27px; background: #267b68; border: 3px solid #f2f5f1; box-sizing: content-box; }
+    .meta { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-bottom: 9px; }
+    .chip { display: inline-block; font-size: .73rem; font-weight: 750; border-radius: 999px; background: #edf3ef; color: #30564b; padding: 3px 10px; letter-spacing: .015em; }
+    .chip.status { background: #fff0d6; color: #79501e; }
+    .chip.kind { background: #e2ecee; color: #285b6a; }
+    .date { font-size: .83rem; color: #56716b; margin-left: auto; white-space: nowrap; }
+    h3 { font-size: 1.25rem; line-height: 1.3; letter-spacing: -.018em; margin: 5px 0 9px; }
+    .entry p { margin: 9px 0; color: #304b46; }
+    .field-label { font-weight: 800; color: #183b32; }
+    .source-list { list-style: none; display: flex; gap: 9px 16px; flex-wrap: wrap; margin: 14px 0 0; padding: 13px 0 0; border-top: 1px solid #e4ebe7; font-size: .9rem; }
+    .source-list a { font-weight: 700; }
+    .empty { padding: 30px; background: white; border: 1px dashed #a8bdb3; border-radius: 12px; text-align: center; color: #4d645c; }
+    footer { margin-top: 36px; color: #647b74; font-size: .87rem; }
+    @media (max-width: 760px) { .hero { padding-top: 38px; } .filters { grid-template-columns: 1fr 1fr; } .filters .search { grid-column: 1 / -1; } }
+    @media (max-width: 500px) { .page { padding: 23px 16px 48px; } .hero { padding: 34px 16px 37px; } .filters { grid-template-columns: 1fr; padding: 15px; } .filters .search { grid-column: auto; } .timeline { padding-left: 19px; margin-left: 7px; } .entry { padding: 17px; } .entry::before { left: -27px; } .date { margin-left: 0; width: 100%; } }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Business Ideas / Learning Ledger</p>
+      <h1>What we tried.<br>What we learned.<br>What changed.</h1>
+      <p class="intro">A source-linked record of assumptions, decisions, experiments and lessons across the portfolio. The purpose is to preserve reasoning—not to make untested ideas look like finished businesses.</p>
+      <nav class="hero-actions" aria-label="Related resources">
+        <a href="https://github.com/cwarloe/businessideas/blob/main/BUSINESS_IDEA_PLAYBOOK.md">Read the playbook</a>
+        <a href="https://github.com/cwarloe/businessideas/blob/main/playbook/decision-history-format.md">How this history works</a>
+      </nav>
+    </div>
+  </header>
+  <main class="page wrap">
+    <div class="notice"><strong>Evidence matters.</strong> A proposed experiment is not a completed test; a flavor vote is not a paid order. Entries represent selected historical records from the repository, not every conversation or real-world event.</div>
+    <form id="filters" class="filters" role="search" autocomplete="off">
+      <div class="search"><label for="search">Search the history</label><input id="search" type="search" placeholder="Try trailer, demand, tasting..." aria-label="Search decision history"></div>
+      <div><label for="idea">Business idea</label><select id="idea"><option value="">All ideas</option></select></div>
+      <div><label for="kind">Record type</label><select id="kind"><option value="">All types</option></select></div>
+      <div><label for="status">Status</label><select id="status"><option value="">All statuses</option></select></div>
+    </form>
+    <div class="result-heading"><h2>Decision timeline</h2><span id="result-count" aria-live="polite">Loading records…</span></div>
+    <div id="timeline" class="timeline" aria-live="off"><p>Loading source-linked history…</p></div>
+    <footer>Maintained in the public <a href="https://github.com/cwarloe/businessideas">businessideas repository</a>. No Cloudflare voting data or private customer details are loaded on this page.</footer>
+  </main>
+  <script type="module">
+    const $ = (selector) => document.querySelector(selector);
+    const timeline = $('#timeline');
+    const search = $('#search');
+    const idea = $('#idea');
+    const kind = $('#kind');
+    const status = $('#status');
+    const count = $('#result-count');
+    const repository = 'https://github.com/cwarloe/businessideas/blob/main/';
+    const pretty = (value) => value.charAt(0).toUpperCase() + value.slice(1).replaceAll('-', ' ');
+    const make = (tag, className, text) => {
+      const node = document.createElement(tag);
+      if (className) node.className = className;
+      if (text !== undefined) node.textContent = text;
+      return node;
+    };
+    const addOptions = (select, values) => {
+      for (const [value, label] of values) {
+        const option = make('option', '', label);
+        option.value = value;
+        select.append(option);
+      }
+    };
+    const formatDate = (value) => new Date(`${value}T00:00:00Z`).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC' });
+    function renderCard(event, names) {
+      const card = make('article', 'entry');
+      const meta = make('div', 'meta');
+      meta.append(make('span', 'chip', names.get(event.idea) || event.idea));
+      meta.append(make('span', 'chip kind', pretty(event.kind)));
+      meta.append(make('span', 'chip status', pretty(event.status)));
+      const time = make('time', 'date', formatDate(event.date));
+      time.dateTime = event.date;
+      meta.append(time);
+      card.append(meta, make('h3', '', event.title), make('p', '', event.summary));
+      for (const [label, value] of [['Why', event.why], ['Revisit when', event.revisitWhen]]) {
+        if (!value) continue;
+        const paragraph = make('p');
+        paragraph.append(make('span', 'field-label', `${label}: `), document.createTextNode(value));
+        card.append(paragraph);
+      }
+      if (event.supersedes) card.append(make('p', '', `Updates historical record ${event.supersedes}`));
+      const sources = make('ul', 'source-list');
+      for (const source of event.sources) {
+        const item = make('li');
+        const link = make('a', '', source.label);
+        link.href = source.path ? `${repository}${source.path.split('/').map(encodeURIComponent).join('/')}` : source.url;
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+        item.append(link);
+        sources.append(item);
+      }
+      card.append(sources);
+      return card;
+    }
+    async function start() {
+      try {
+        const response = await fetch('./data/decision-history.json', { cache: 'no-cache' });
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const data = await response.json();
+        const names = new Map(data.ideas.map((item) => [item.id, item.label]));
+        addOptions(idea, data.ideas.map((item) => [item.id, item.label]));
+        addOptions(kind, [...new Set(data.events.map((item) => item.kind))].sort().map((value) => [value, pretty(value)]));
+        addOptions(status, [...new Set(data.events.map((item) => item.status))].sort().map((value) => [value, pretty(value)]));
+        function refresh() {
+          const query = search.value.trim().toLocaleLowerCase();
+          const visible = data.events.filter((event) =>
+            (!idea.value || event.idea === idea.value)
+            && (!kind.value || event.kind === kind.value)
+            && (!status.value || event.status === status.value)
+            && (!query || [names.get(event.idea), event.title, event.summary, event.why, event.revisitWhen, event.status].filter(Boolean).join(' ').toLocaleLowerCase().includes(query))
+          ).sort((a, b) => b.date.localeCompare(a.date) || a.id.localeCompare(b.id));
+          count.textContent = `${visible.length} of ${data.events.length} records`;
+          timeline.replaceChildren();
+          if (!visible.length) timeline.append(make('p', 'empty', 'No records match these filters. Try a broader search.'));
+          else timeline.append(...visible.map((event) => renderCard(event, names)));
+        }
+        for (const control of [search, idea, kind, status]) control.addEventListener(control === search ? 'input' : 'change', refresh);
+        refresh();
+      } catch (error) {
+        count.textContent = 'History unavailable';
+        timeline.replaceChildren(make('p', 'empty', 'The history file could not be loaded. Please refresh or view the source records in GitHub.'));
+        console.error('Decision history failed to load', error);
+      }
+    }
+    start();
+  </script>
+</body>
+</html>
