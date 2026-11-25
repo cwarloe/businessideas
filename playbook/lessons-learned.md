@@ -65,3 +65,15 @@ There has been **no documented paid Oats field trial**, no verified office host 
 | A closure announcement and a still-live café invitation coexist online. | Check dated owner explanations and specific locations. Preserve contradictory evidence and the scope of any closure claim. |
 
 Read the [Milk Bar decision record](../ideas/milk-bar/README.md), [full report](../ideas/milk-bar/research/round-1-market-research.md) and [source register](../ideas/milk-bar/research/round-1-sources.md).
+
+## Milk Bar · Round 2 feasibility · November 18, 2026
+
+| Observation | Reusable lesson |
+|---|---|
+| A Boise kitchen publishes an hourly rate and pictures a room for pop-ups. Four hours at that rate consume $120 of a $154.73 hypothetical session ceiling. | Price the actual booking block, service permission and audience separately. A commercial kitchen provides production capacity. It may still take a second partner or an event buyer to bring customers. |
+| At 20 hypothetical orders the host has $3.50 left after a four-hour local wage comparison, before all unquoted costs. | Show how much a business can afford to pay a partner or worker at weak volume. Count preparation, purchasing and cleanup along with service. Keep a wage comparison distinct from a founder's personal hurdle. |
+| A market comparison used a common two-hour window, but this Boise market requires full-day attendance and publishes four selling hours. | Rerun the estimate for the actual site schedule. Distinguish unchanged hourly traffic from unchanged total sales. |
+| A flight's per-sale contribution rivals a signature's but it takes nearly twice the modeled time. A private host buys a whole event. | Compare contribution per constrained minute and model one invoice per group. Capture package ordering increments as well as consumed ounces. |
+| The health district distinguishes private catering from public events. A form acknowledgment records receipt. | Identify the legal seller, site, menu, sinks and cold chain in the inquiry. Record agency receipt, written classification, application and final approval separately. |
+
+[Round 2 report](../ideas/milk-bar/research/round-2-feasibility.md) · [Editable workbook](../ideas/milk-bar/research/milk-bar-feasibility.xlsx) · [Dated sources](../ideas/milk-bar/research/round-2-sources-and-assumptions.md)
