@@ -54,3 +54,14 @@ After the earlier GitHub Pages/domain confusion, the repository added a source-t
 ## What is still *not* learned
 
 There has been **no documented paid Oats field trial**, no verified office host contract, no completed regulator determination for the specific recurring office setup, no completed trademark clearance, and no real cost/retention dataset. Do not turn the above lessons into claims that a profitable operation has been proven.
+
+## Milk Bar · Round 1 market research · November 18, 2026
+
+| Observation | Reusable lesson |
+|---|---|
+| A Boise boba/coffee shop lists the proposed strawberry milk signature as a single menu item. | Search individual products across adjacent categories before claiming a market gap. Save the item, size, channel, price and access date. |
+| A fair milk stand attracts substantial consumption while dairy farmers subsidize its losses. | Identify who pays for the experience. Record subsidy, bundled admission and refills before using traffic or menu price in an economic comparison. |
+| A local dessert flight and an overseas dairy flight support distinct occasions. Neither establishes Boise retention for the proposed milk flight. | Count paying parties, same-visit upsells and later full-price returns separately. Compare contribution per constrained service minute and per total owner-hour. |
+| A closure announcement and a still-live café invitation coexist online. | Check dated owner explanations and specific locations. Preserve contradictory evidence and the scope of any closure claim. |
+
+Read the [Milk Bar decision record](../ideas/milk-bar/README.md), [full report](../ideas/milk-bar/research/round-1-market-research.md) and [source register](../ideas/milk-bar/research/round-1-sources.md).

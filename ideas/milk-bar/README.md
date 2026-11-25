@@ -1,10 +1,10 @@
 # Milk Bar — concept and decision record
 
 **Created:** November 18, 2026  
-**Stage:** concept definition, before external market research  
+**Stage:** Round 1 market research complete, awaiting owner review  
 **Status:** HYPOTHESIS — no product sold, no business name cleared, no food-service approval, no storefront or equipment selected  
 **Working label:** "Milk Bar" describes the category, **not** a trademark-cleared name  
-**Initial research geography:** Boise/Treasure Valley, Idaho, proposed for investigation; international analogs may inform the design
+**Initial research geography:** Boise/Treasure Valley, Idaho, with international analogs for comparison
 
 ## One-sentence concept
 
@@ -105,11 +105,18 @@ Never call gross sales profit. Earlier illustrative price/cost examples from bra
 | 2026-11-18 | Excluding coffee, espresso, ice cream, shakes and smoothies from launch | **Proposed, not confirmed** |
 | 2026-11-18 | Boise/Treasure Valley, host site, pop-up format, pricing, size, supplier, permitting | **Unverified** |
 | 2026-11-18 | Demand, target profit, legal approvals, any live sales | **Not tested** |
+| 2026-11-18 | Round 1 market screen | Completed. HOLD a dedicated counter. A recurring host is the preferred candidate for feasibility review. Owner decision pending. |
+| 2026-11-18 | Lead appeal and audience | Both remain open. Afternoon treat buyers have the closest adjacent evidence. Pairs and families are a distinct discovery audience. |
+| 2026-11-18 | Positioning and name | A Boise business already lists fresh strawberry milk. “Milk Bar” remains an internal label pending clearance. |
 
-## Research and next action
+## Round 1 record and lessons
 
-Read [Research Brief v1.0](research-brief-v1.md). **Round 1 is competitive-market and customer research only.** Rounds 2–3 will cover sourced financial feasibility and actual demand tests. No research outputs have yet been inserted into this folder.
+Read the [market report](research/round-1-market-research.md), [dated source register](research/round-1-sources.md) and original [research brief](research-brief-v1.md).
 
-Before ending any subsequent session, preserve both **positive and negative results**, dated sources, assumption changes, rejected concepts, decisions, revised economics and PR/merge status. Use the [reusable business-idea playbook PR #12](https://github.com/cwarloe/businessideas/pull/12) while that playbook remains unmerged.
+- A $6 small fresh strawberry milk is already listed in Boise. Any proposed signature has to earn another purchase against that incumbent. [Urban Fox menu](https://urbanfoxidaho.com/menu/)
+- Dairy comparisons are offered at posted prices abroad. In Boise, a shared flight could earn its place as an outing even if guests buy it only once. Track the paying party, later drink purchases and the extra minutes needed for each flight. [Round 1 comparison](research/round-1-market-research.md)
+- A busy milk stand may have another payer. The Minnesota fair stand’s low price and reported losses illustrate why sponsor support, refills and individual transactions need separate treatment. [MPR reporting](https://www.mprnews.org//story/2026/09/04/minnesota-state-fair-all-you-can-drink-milk-stand-has-only-increased-2-90-in-70-years)
 
-**Next action:** Run Round 1 with explicit Boise competitor/substitute coverage, analogous businesses beyond Boise, clear demand hypotheses, and a skeptical profit lens. Do not design/publish a website or buy equipment based on the research report alone.
+**Next decision for Charles:** decide whether to authorize Round 2 for one host-based format and specify the minimum return per owner-hour and maximum cash/time at risk. Host access, regulatory classification, recipe quality, prices, repeat demand and actual profitability remain open. See the [portfolio lessons](../../playbook/lessons-learned.md).
+
+For subsequent rounds, preserve dated sources, positive and negative findings, rejected concepts, revisions to assumptions and economics, decisions and PR/merge status. Follow the [reusable business-idea playbook](../../BUSINESS_IDEA_PLAYBOOK.md).
