@@ -4,6 +4,10 @@
 **Scope:** All the naming, concept-design, market, food-cart, trailer, food-service, and sales-model brainstorming in the current development conversation.  
 **Status:** Working hypotheses, **not** an operating plan cleared by a trademark attorney, City of Boise, Central District Health, property owner, or trailer manufacturer.
 
+## November 18, 2026 office breakfast comparison
+
+The [oatmeal, milk and hot chocolate study](oatmeal-milk-and-cocoa-office-breakfast.md) compares a staffed counter with a prepaid employer delivery. It includes local menu prices, hot-batch waste, site and permitting questions, and operator earnings. Use the [editable calculator](office-breakfast.xlsx) to replace the illustrative orders, kitchen fee and labor with actuals.
+
 ## Published research overview
 
 - [Public-facing Boise kitchen and office breakfast research page](../research.html) — accessible from the Oats, Etc. homepage, with linked sources and next-step recommendations.
