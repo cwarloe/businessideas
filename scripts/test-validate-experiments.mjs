@@ -93,6 +93,30 @@ test('completed evidence must link to a file, not an existing directory', () => 
   assert.match(validateExperiment(r, history).errors.join('; '), /observation\.evidence/);
 });
 
+test('unknown root and nested fields fail closed instead of carrying unvalidated data', () => {
+  const variants = [
+    [r => { r.raw_customer_list = ['synthetic@example.invalid']; }, 'record'],
+    [r => { r.plan.private_supplier_terms = 'synthetic only'; }, 'plan'],
+    [r => { r.authorization.owner_contact = 'synthetic only'; }, 'authorization'],
+    [r => { r.observation.buyer_email = 'synthetic@example.invalid'; }, 'observation'],
+    [r => { r.owner_decision.raw_notes = 'synthetic only'; }, 'owner_decision']
+  ];
+  for (const [modify, location] of variants) {
+    const r = planned();
+    modify(r);
+    const errors = validateExperiment(r, history).errors;
+    assert.ok(errors.some(error => error.includes(`${location} contains unsupported fields`)), location);
+    assert.ok(errors.every(error => !error.includes('synthetic@') && !error.includes('synthetic only')));
+  }
+});
+
+test('schema v1 allows only documented traveler fields and still validates the stock template shape', () => {
+  const r = planned();
+  assert.deepEqual(validateExperiment(r, history).errors, []);
+  r.observation.synthetic_context = { anonymous: true };
+  assert.match(validateExperiment(r, history).errors.join('; '), /observation contains unsupported fields/);
+});
+
 test('completed evidence rejects malformed or credential-bearing HTTPS references', () => {
   const r = completed();
   for (const badRef of ['https://', 'https:///example.com/evidence', 'https://user:token@example.com/source', 'https://example .com/source', 'https://example.com\\evil.com/file']) {
