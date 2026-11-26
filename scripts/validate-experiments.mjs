@@ -149,13 +149,41 @@ export function summarize(records) {
   };
 }
 
+/** Only documented, top-level traveler files may enter the experiment ledger.
+ * Rejecting unexpected artifacts prevents green CI from overlooking a
+ * mistakenly exported research file or a traveler with a different extension.
+ * No unexpected file contents are opened or echoed in diagnostics.
+ */
+export function scanExperimentArtifacts(directory) {
+  const files = [];
+  const errors = [];
+  const harmless = new Set(['README.md', '_template.json', '.DS_Store', '.gitkeep']);
+  let entries;
+  try { entries = readdirSync(directory, { withFileTypes: true }); }
+  catch (error) { return { files, errors: [`experiments/: cannot list directory (${error.code ?? 'IO_ERROR'})`] }; }
+
+  for (const entry of entries.sort((a, b) => a.name.localeCompare(b.name))) {
+    if (harmless.has(entry.name) && entry.isFile()) continue;
+    if (entry.isFile() && entry.name.endsWith('.json') && !entry.name.startsWith('_')) {
+      files.push(entry.name);
+      continue;
+    }
+    // Includes nested folders, symlinks, uppercase JSON, CSV, hidden exports
+    // and other unvalidated artifacts. Never dereference symlinks here.
+    errors.push(`experiments/${entry.name}: unvalidated artifact; use a top-level <experiment-id>.json traveler`);
+  }
+  return { files, errors };
+}
+
 function run() {
   const errors = [];
   const alerts = [];
   let history;
   try { history = JSON.parse(readFileSync(resolve(root, 'docs/data/decision-history.json'), 'utf8')); }
   catch (error) { console.error(`Cannot load decision history: ${error.message}`); process.exitCode = 2; return; }
-  const files = readdirSync(recordsDirectory).filter(file => file.endsWith('.json') && !file.startsWith('_')).sort();
+  const scan = scanExperimentArtifacts(recordsDirectory);
+  errors.push(...scan.errors);
+  const files = scan.files;
   const seen = new Set();
   const records = [];
   for (const file of files) {
