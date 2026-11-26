@@ -1,7 +1,8 @@
 #!/usr/bin/env node
-import { readFileSync, existsSync } from 'node:fs';
-import { resolve, dirname, relative, isAbsolute } from 'node:path';
+import { readFileSync } from 'node:fs';
+import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { validHttpsSource, validLocalEvidenceFile } from './source-reference.mjs';
 
 const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const dataFile = resolve(repositoryRoot, 'docs/data/decision-history.json');
@@ -55,11 +56,9 @@ for (const [index, event] of (Array.isArray(data.events) ? data.events : []).ent
       if (!isText(source?.label)) report(`${location}: missing label`);
       if (Boolean(source?.path) === Boolean(source?.url)) { report(`${location}: specify exactly one path or url`); continue; }
       if (source.path) {
-        if (typeof source.path !== 'string' || isAbsolute(source.path) || source.path.includes('\\')) { report(`${location}: invalid local path`); continue; }
-        const full = resolve(repositoryRoot, source.path);
-        if (relative(repositoryRoot, full).startsWith('..') || !existsSync(full)) report(`${location}: missing or outside-repository file ${source.path}`);
-      } else if (!/^https:\/\/[^\s]+$/.test(source.url)) {
-        report(`${location}: external source must be an HTTPS URL`);
+        if (!validLocalEvidenceFile(source.path, repositoryRoot)) report(`${location}: source path must be an existing repository file, not a directory or outside path (${source.path})`);
+      } else if (!validHttpsSource(source.url)) {
+        report(`${location}: external source must be a well-formed HTTPS URL without embedded credentials`);
       }
     }
   }
