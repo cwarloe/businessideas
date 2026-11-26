@@ -3,17 +3,23 @@ name: Validate decision history
 on:
   pull_request:
     paths:
+      - 'experiments/**'
       - 'docs/data/decision-history.json'
       - 'docs/decision-history.html'
       - 'scripts/validate-decision-history.mjs'
+      - 'scripts/validate-experiments.mjs'
+      - 'scripts/test-validate-experiments.mjs'
       - 'playbook/decision-history-format.md'
       - '.github/workflows/validate-decision-history.yml'
   push:
     branches: [main]
     paths:
+      - 'experiments/**'
       - 'docs/data/decision-history.json'
       - 'docs/decision-history.html'
       - 'scripts/validate-decision-history.mjs'
+      - 'scripts/validate-experiments.mjs'
+      - 'scripts/test-validate-experiments.mjs'
       - 'playbook/decision-history-format.md'
       - '.github/workflows/validate-decision-history.yml'
   workflow_dispatch:
@@ -32,3 +38,7 @@ jobs:
           node-version: '24'
       - name: Validate structured history and source links
         run: node scripts/validate-decision-history.mjs
+      - name: Validate proposed experiments without inventing field results
+        run: node scripts/validate-experiments.mjs
+      - name: Exercise fail-closed traveler and measurement cases
+        run: node --test scripts/test-validate-experiments.mjs
