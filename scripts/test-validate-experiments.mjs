@@ -1,5 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import { mkdtempSync, rmSync, symlinkSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
 import { validateExperiment, experimentResult, summarize } from './validate-experiments.mjs';
 
 const history = {
@@ -82,6 +85,34 @@ test('unknown source, impossible counts and dates fail closed', () => {
   r.observation.evidence = ['../../secret.csv'];
   const errors = validateExperiment(r, history).errors.join('; ');
   for (const part of ['history_event_id', 'successes', 'finished_on', 'evidence']) assert.match(errors, new RegExp(part));
+});
+
+test('completed evidence must link to a file, not an existing directory', () => {
+  const r = completed();
+  r.observation.evidence = ['playbook'];
+  assert.match(validateExperiment(r, history).errors.join('; '), /observation\.evidence/);
+});
+
+test('completed evidence rejects malformed or credential-bearing HTTPS references', () => {
+  const r = completed();
+  for (const badRef of ['https://', 'https:///example.com/evidence', 'https://user:token@example.com/source', 'https://example .com/source']) {
+    r.observation.evidence = [badRef];
+    assert.match(validateExperiment(r, history).errors.join('; '), /observation\.evidence/, badRef);
+  }
+  r.observation.evidence = ['https://example.com/aggregate-research'];
+  assert.deepEqual(validateExperiment(r, history).errors, []);
+});
+
+test('local evidence cannot escape checkout by following a symlink', () => {
+  const sandbox = mkdtempSync(join(tmpdir(), 'businessideas-evidence-'));
+  try {
+    symlinkSync(process.execPath, join(sandbox, 'outside'));
+    const r = completed();
+    r.observation.evidence = ['outside'];
+    assert.match(validateExperiment(r, history, sandbox).errors.join('; '), /observation\.evidence/);
+  } finally {
+    rmSync(sandbox, { recursive: true, force: true });
+  }
 });
 
 test('actual budget/time overruns are alerted but factual records remain valid', () => {
