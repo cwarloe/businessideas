@@ -23,6 +23,8 @@ function own(value, key) { return Object.prototype.hasOwnProperty.call(value ?? 
 
 function evidenceReference(ref, repoRoot) {
   if (typeof ref !== 'string' || !ref.trim()) return false;
+  // A backslash may be interpreted as a URL slash and may also escape a local path.
+  if (ref.includes('\\')) return false;
   if (ref.startsWith('https://')) {
     // URL() alone silently normalizes some malformed triple-slash URLs.
     if (!/^https:\/\/[^/?#@\s]+/.test(ref) || /\s/.test(ref)) return false;
@@ -31,7 +33,7 @@ function evidenceReference(ref, repoRoot) {
       return url.protocol === 'https:' && !!url.hostname && !url.username && !url.password;
     } catch { return false; }
   }
-  if (isAbsolute(ref) || ref.includes('\\') || ref.includes('#') || ref.includes('?')) return false;
+  if (isAbsolute(ref) || ref.includes('#') || ref.includes('?')) return false;
   const full = resolve(repoRoot, ref);
   const rel = relative(repoRoot, full);
   if (rel === '' || rel === '..' || rel.startsWith(`..${sep}`)) return false;

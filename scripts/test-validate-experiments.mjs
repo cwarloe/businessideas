@@ -95,7 +95,7 @@ test('completed evidence must link to a file, not an existing directory', () => 
 
 test('completed evidence rejects malformed or credential-bearing HTTPS references', () => {
   const r = completed();
-  for (const badRef of ['https://', 'https:///example.com/evidence', 'https://user:token@example.com/source', 'https://example .com/source']) {
+  for (const badRef of ['https://', 'https:///example.com/evidence', 'https://user:token@example.com/source', 'https://example .com/source', 'https://example.com\\evil.com/file']) {
     r.observation.evidence = [badRef];
     assert.match(validateExperiment(r, history).errors.join('; '), /observation\.evidence/, badRef);
   }
