@@ -1,9 +1,9 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { mkdtempSync, rmSync, symlinkSync } from 'node:fs';
+import { mkdtempSync, mkdirSync, rmSync, symlinkSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
-import { validateExperiment, experimentResult, summarize } from './validate-experiments.mjs';
+import { validateExperiment, experimentResult, scanExperimentArtifacts, summarize } from './validate-experiments.mjs';
 
 const history = {
   ideas: [{ id: 'milk-bar' }],
@@ -220,4 +220,39 @@ test('no records preserves unknown threshold attainment and cost', () => {
   assert.equal(s.records, 0);
   assert.equal(s.threshold_attainment_rate, null);
   assert.equal(s.total_spent_usd, null);
+});
+
+test('experiment scanner accepts only named top-level JSON travelers and harmless stock files', () => {
+  const sandbox = mkdtempSync(join(tmpdir(), 'businessideas-artifacts-'));
+  try {
+    for (const name of ['README.md', '_template.json', '.DS_Store', '.gitkeep', 'milk-bar-demo-1.json']) {
+      writeFileSync(join(sandbox, name), '{}');
+    }
+    assert.deepEqual(scanExperimentArtifacts(sandbox), { files: ['milk-bar-demo-1.json'], errors: [] });
+  } finally { rmSync(sandbox, { recursive: true, force: true }); }
+});
+
+test('experiment scanner fails closed on unvalidated nested, uppercase and export files', () => {
+  const sandbox = mkdtempSync(join(tmpdir(), 'businessideas-artifacts-'));
+  try {
+    writeFileSync(join(sandbox, 'milk-bar.JSON'), '{}');
+    writeFileSync(join(sandbox, 'buyer-export.csv'), 'synthetic,not-real');
+    mkdirSync(join(sandbox, 'nested'));
+    writeFileSync(join(sandbox, 'nested', 'milk-bar.json'), '{}');
+    const scan = scanExperimentArtifacts(sandbox);
+    assert.deepEqual(scan.files, []);
+    for (const name of ['milk-bar.JSON', 'buyer-export.csv', 'nested']) {
+      assert.ok(scan.errors.some(error => error.includes(name)), name);
+    }
+  } finally { rmSync(sandbox, { recursive: true, force: true }); }
+});
+
+test('experiment scanner rejects symlinked traveler without reading its target', () => {
+  const sandbox = mkdtempSync(join(tmpdir(), 'businessideas-artifacts-'));
+  try {
+    symlinkSync(process.execPath, join(sandbox, 'fake-traveler.json'));
+    const scan = scanExperimentArtifacts(sandbox);
+    assert.deepEqual(scan.files, []);
+    assert.ok(scan.errors.some(error => error.includes('fake-traveler.json')));
+  } finally { rmSync(sandbox, { recursive: true, force: true }); }
 });
