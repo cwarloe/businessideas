@@ -21,12 +21,22 @@ function date(value) {
 function nonnegative(value) { return typeof value === 'number' && Number.isFinite(value) && value >= 0; }
 function nullableNumber(value) { return value === null || nonnegative(value); }
 function own(value, key) { return Object.prototype.hasOwnProperty.call(value ?? {}, key); }
+function rejectUnknownFields(value, allowed, location, add) {
+  if (!value || typeof value !== 'object' || Array.isArray(value)) return;
+  const schema = new Set(allowed);
+  // Do not repeat unvalidated field names or values in potentially public CI
+  // logs; a forgotten raw customer-data field should fail, not be printed.
+  if (Object.keys(value).some(key => !schema.has(key))) {
+    add(`${location} contains unsupported fields outside schema v1`);
+  }
+}
 
 export function validateExperiment(record, history, repoRoot = root) {
   const errors = [];
   const alerts = [];
   const add = message => errors.push(message);
   if (!record || typeof record !== 'object' || Array.isArray(record)) return { errors: ['record must be an object'], alerts };
+  rejectUnknownFields(record, ['schema_version', 'id', 'idea', 'history_event_id', 'state', 'plan', 'authorization', 'observation', 'owner_decision', 'cancellation_reason'], 'record', add);
   if (record.schema_version !== 1) add('schema_version must be 1');
   if (!text(record.id) || !idPattern.test(record.id)) add('id must be a lowercase hyphenated slug');
   const ideas = new Set((history?.ideas ?? []).map(item => item.id));
@@ -39,6 +49,7 @@ export function validateExperiment(record, history, repoRoot = root) {
   if (!states.has(record.state)) add('state must be PLANNED, RUNNING, COMPLETED or CANCELLED');
 
   const p = record.plan ?? {};
+  rejectUnknownFields(p, ['registered_on', 'hypothesis', 'customer_segment', 'method', 'success_definition', 'minimum_sample', 'target_success_rate', 'budget_cap_usd', 'owner_hours_cap'], 'plan', add);
   for (const field of ['hypothesis', 'customer_segment', 'method', 'success_definition']) {
     if (!text(p[field])) add(`plan.${field} must contain text`);
   }
@@ -50,6 +61,7 @@ export function validateExperiment(record, history, repoRoot = root) {
   }
 
   const a = record.authorization ?? {};
+  rejectUnknownFields(a, ['status', 'approved_by', 'approved_on'], 'authorization', add);
   if (!['NOT_APPROVED', 'APPROVED'].includes(a.status)) add('authorization.status must be NOT_APPROVED or APPROVED');
   if (a.status === 'APPROVED' && (!text(a.approved_by) || !date(a.approved_on))) {
     add('approved experiments require approver and approval date');
@@ -59,6 +71,7 @@ export function validateExperiment(record, history, repoRoot = root) {
   }
 
   const o = record.observation ?? {};
+  rejectUnknownFields(o, ['started_on', 'finished_on', 'sample', 'successes', 'spent_usd', 'owner_hours', 'evidence'], 'observation', add);
   for (const field of ['sample', 'successes']) {
     if (o[field] !== null && (!Number.isInteger(o[field]) || o[field] < 0)) add(`observation.${field} must be a nonnegative integer or null`);
   }
@@ -97,6 +110,7 @@ export function validateExperiment(record, history, repoRoot = root) {
   }
 
   const d = record.owner_decision ?? {};
+  rejectUnknownFields(d, ['status', 'decided_by', 'decided_on', 'why'], 'owner_decision', add);
   if (!['PENDING', 'CONTINUE', 'CHANGE', 'STOP'].includes(d.status)) add('owner_decision.status is invalid');
   if (d.status !== 'PENDING') {
     if (!['COMPLETED', 'CANCELLED'].includes(record.state)) add('owner decision cannot precede completion or cancellation');
