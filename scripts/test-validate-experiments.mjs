@@ -34,7 +34,7 @@ test('planned travel has no invented outcomes and no measured yield', () => {
   const r = planned();
   assert.deepEqual(validateExperiment(r, history).errors, []);
   assert.equal(experimentResult(r), 'NOT_MEASURED');
-  assert.equal(summarize([r]).first_pass_yield, null);
+  assert.equal(summarize([r]).threshold_attainment_rate, null);
   assert.equal(summarize([r]).total_spent_usd, null);
 });
 
@@ -43,14 +43,14 @@ test('completed sourced results are evaluable but never auto-approved', () => {
   assert.deepEqual(validateExperiment(r, history).errors, []);
   assert.equal(experimentResult(r), 'MET_PREDECLARED_THRESHOLD');
   assert.equal(r.owner_decision.status, 'PENDING');
-  assert.equal(summarize([r]).first_pass_yield, 1);
+  assert.equal(summarize([r]).threshold_attainment_rate, 1);
 });
 
 test('undersized sample is inconclusive, not a success', () => {
   const r = completed();
   r.observation.sample = 3; r.observation.successes = 3;
   assert.equal(experimentResult(r), 'INCONCLUSIVE');
-  assert.equal(summarize([r]).first_pass_yield, null);
+  assert.equal(summarize([r]).threshold_attainment_rate, null);
 });
 
 test('unapproved execution cannot be recorded as completed', () => {
@@ -109,9 +109,9 @@ test('unearned owner decisions and cancellations are rejected', () => {
   assert.match(validateExperiment(r, history).errors.join('; '), /CANCELLED/);
 });
 
-test('no records preserves a null yield and total, not a false 100% pass', () => {
+test('no records preserves unknown threshold attainment and cost', () => {
   const s = summarize([]);
   assert.equal(s.records, 0);
-  assert.equal(s.first_pass_yield, null);
+  assert.equal(s.threshold_attainment_rate, null);
   assert.equal(s.total_spent_usd, null);
 });

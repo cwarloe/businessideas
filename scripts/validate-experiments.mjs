@@ -135,10 +135,10 @@ export function summarize(records) {
     completed: completed.length,
     evaluable: measured.length,
     passed_threshold: measured.filter(x => experimentResult(x) === 'MET_PREDECLARED_THRESHOLD').length,
-    first_pass_yield: measured.length ? measured.filter(x => experimentResult(x) === 'MET_PREDECLARED_THRESHOLD').length / measured.length : null,
+    threshold_attainment_rate: measured.length ? measured.filter(x => experimentResult(x) === 'MET_PREDECLARED_THRESHOLD').length / measured.length : null,
     total_spent_usd: completed.length && allKnown ? completed.reduce((sum, x) => sum + x.observation.spent_usd, 0) : null,
     total_owner_hours: completed.length && allKnown ? completed.reduce((sum, x) => sum + x.observation.owner_hours, 0) : null,
-    note: 'Experiment threshold attainment is not business success or owner approval; null means unmeasured, not zero.'
+    note: 'Threshold attainment measures only evaluated experiments meeting their own predefined threshold; it is not first-pass yield, business success or owner approval. Null means unmeasured, not zero.'
   };
 }
 

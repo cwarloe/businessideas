@@ -14,7 +14,7 @@ This is a **measurement and handoff aid** for the existing [Business Idea Playbo
 
 ## Checks
 
-Run `node scripts/validate-experiments.mjs` and `node --test scripts/test-validate-experiments.mjs`. Both run in existing GitHub Actions decision-history validation. The report is factual: with no experiment records, `records: 0`, `first_pass_yield: null`, and `total_spent_usd: null`. A nonzero first-pass yield would mean only the fraction of eligible experiments that met their *own registered threshold*, **not business success**.
+Run `node scripts/validate-experiments.mjs` and `node --test scripts/test-validate-experiments.mjs`. Both run in existing GitHub Actions decision-history validation. The report is factual: with no experiment records, `records: 0`, `threshold_attainment_rate: null`, and `total_spent_usd: null`. The threshold-attainment metric is only the fraction of evaluable experiments that met their *own registered threshold*. It is **not first-pass yield** (rework has not been measured), business success or evidence of profitable demand.
 
 The validator rejects malformed records, impossible dates/counts, unlinked idea hypotheses, invented execution on `PLANNED` entries, completion without observed evidence, unapproved execution, and implicit owner decisions. It *alerts* rather than hiding an actual budget/time overrun. It cannot prove a source is genuine, an approver is authentic, or a past Git commit actually predates a field observation; peer review must inspect those claims.
 
