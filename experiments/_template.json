@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "replace-with-unique-experiment-id",
+  "idea": "replace-with-existing-idea-id",
+  "history_event_id": "replace-with-hypothesis-or-experiment-event-id",
+  "state": "PLANNED",
+  "plan": {
+    "registered_on": "2026-11-26",
+    "hypothesis": "Replace with a falsifiable buyer-behavior hypothesis, not a forecast",
+    "customer_segment": "Define who can be counted and how repeat people are handled",
+    "method": "Specify one low-cost test, alternatives and selection biases",
+    "success_definition": "A uniquely counted observed action (not a click mistaken for a purchase)",
+    "minimum_sample": 10,
+    "target_success_rate": 0.5,
+    "budget_cap_usd": null,
+    "owner_hours_cap": null
+  },
+  "authorization": {
+    "status": "NOT_APPROVED",
+    "approved_by": null,
+    "approved_on": null
+  },
+  "observation": {
+    "started_on": null,
+    "finished_on": null,
+    "sample": null,
+    "successes": null,
+    "spent_usd": null,
+    "owner_hours": null,
+    "evidence": []
+  },
+  "owner_decision": {
+    "status": "PENDING",
+    "decided_by": null,
+    "decided_on": null,
+    "why": null
+  },
+  "cancellation_reason": null
+}
