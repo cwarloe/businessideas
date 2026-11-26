@@ -9,6 +9,8 @@ on:
       - 'scripts/validate-decision-history.mjs'
       - 'scripts/validate-experiments.mjs'
       - 'scripts/test-validate-experiments.mjs'
+      - 'scripts/source-reference.mjs'
+      - 'scripts/test-source-reference.mjs'
       - 'playbook/decision-history-format.md'
       - '.github/workflows/validate-decision-history.yml'
   push:
@@ -20,6 +22,8 @@ on:
       - 'scripts/validate-decision-history.mjs'
       - 'scripts/validate-experiments.mjs'
       - 'scripts/test-validate-experiments.mjs'
+      - 'scripts/source-reference.mjs'
+      - 'scripts/test-source-reference.mjs'
       - 'playbook/decision-history-format.md'
       - '.github/workflows/validate-decision-history.yml'
   workflow_dispatch:
@@ -40,5 +44,5 @@ jobs:
         run: node scripts/validate-decision-history.mjs
       - name: Validate proposed experiments without inventing field results
         run: node scripts/validate-experiments.mjs
-      - name: Exercise fail-closed traveler and measurement cases
-        run: node --test scripts/test-validate-experiments.mjs
+      - name: Exercise fail-closed traveler, source-reference and measurement cases
+        run: node --test scripts/test-validate-experiments.mjs scripts/test-source-reference.mjs

@@ -3,9 +3,10 @@
  * Checks evidence-bearing experiment travelers without claiming any field work.
  * The public repository only accepts anonymized/safe evidence references.
  */
-import { readFileSync, readdirSync, realpathSync, statSync } from 'node:fs';
-import { dirname, isAbsolute, relative, resolve, sep } from 'node:path';
+import { readFileSync, readdirSync } from 'node:fs';
+import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { evidenceReference } from './source-reference.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const recordsDirectory = resolve(root, 'experiments');
@@ -20,31 +21,6 @@ function date(value) {
 function nonnegative(value) { return typeof value === 'number' && Number.isFinite(value) && value >= 0; }
 function nullableNumber(value) { return value === null || nonnegative(value); }
 function own(value, key) { return Object.prototype.hasOwnProperty.call(value ?? {}, key); }
-
-function evidenceReference(ref, repoRoot) {
-  if (typeof ref !== 'string' || !ref.trim()) return false;
-  // A backslash may be interpreted as a URL slash and may also escape a local path.
-  if (ref.includes('\\')) return false;
-  if (ref.startsWith('https://')) {
-    // URL() alone silently normalizes some malformed triple-slash URLs.
-    if (!/^https:\/\/[^/?#@\s]+/.test(ref) || /\s/.test(ref)) return false;
-    try {
-      const url = new URL(ref);
-      return url.protocol === 'https:' && !!url.hostname && !url.username && !url.password;
-    } catch { return false; }
-  }
-  if (isAbsolute(ref) || ref.includes('#') || ref.includes('?')) return false;
-  const full = resolve(repoRoot, ref);
-  const rel = relative(repoRoot, full);
-  if (rel === '' || rel === '..' || rel.startsWith(`..${sep}`)) return false;
-  try {
-    // A directory is not evidence; symlinks may point outside the checkout.
-    const realRoot = realpathSync(repoRoot);
-    const realFile = realpathSync(full);
-    const realRel = relative(realRoot, realFile);
-    return realRel !== '' && realRel !== '..' && !realRel.startsWith(`..${sep}`) && statSync(realFile).isFile();
-  } catch { return false; }
-}
 
 export function validateExperiment(record, history, repoRoot = root) {
   const errors = [];
