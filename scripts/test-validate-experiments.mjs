@@ -98,6 +98,81 @@ test('missing dollars are unknown, not fabricated zero', () => {
   r.observation.spent_usd = null;
   assert.deepEqual(validateExperiment(r, history).errors, []);
   assert.equal(summarize([r]).total_spent_usd, null);
+  assert.equal(summarize([r]).total_owner_hours, 1.5);
+  assert.equal(summarize([r]).known_owner_hours, 1.5);
+  assert.equal(summarize([r]).unknown_spend_records, 1);
+});
+
+test('unknown owner hours do not suppress measured dollar totals', () => {
+  const r = completed();
+  r.observation.owner_hours = null;
+  const s = summarize([r]);
+  assert.equal(s.total_spent_usd, 9);
+  assert.equal(s.known_spent_usd, 9);
+  assert.equal(s.total_owner_hours, null);
+  assert.equal(s.unknown_owner_hours_records, 1);
+});
+
+test('running and completed and cancelled expenditure is counted', () => {
+  const done = completed();
+  const running = completed();
+  running.id = 'milk-bar-demo-2';
+  running.state = 'RUNNING';
+  running.observation.finished_on = null;
+  running.observation.spent_usd = 4;
+  running.observation.owner_hours = 1;
+  const cancelled = completed();
+  cancelled.id = 'milk-bar-demo-3';
+  cancelled.state = 'CANCELLED';
+  cancelled.cancellation_reason = 'Not a viable sample';
+  cancelled.observation.spent_usd = 20;
+  cancelled.observation.owner_hours = 3;
+  assert.deepEqual(validateExperiment(cancelled, history).errors, []);
+  const s = summarize([done, running, cancelled]);
+  assert.equal(s.executed_records, 3);
+  assert.equal(s.total_spent_usd, 33);
+  assert.equal(s.total_owner_hours, 5.5);
+  assert.equal(s.evaluable, 1);
+});
+
+test('cancelled work that started cannot evade authorization or chronology', () => {
+  const r = completed();
+  r.state = 'CANCELLED';
+  r.cancellation_reason = 'Unexpected problem';
+  r.authorization = planned().authorization;
+  r.observation.finished_on = '2026-11-25';
+  const errors = validateExperiment(r, history).errors.join('; ');
+  assert.match(errors, /authorization/);
+  assert.match(errors, /finish date/);
+});
+
+test('an unstarted planned experiment may be cancelled without approval or spend', () => {
+  const r = planned();
+  r.state = 'CANCELLED';
+  r.cancellation_reason = 'Found cheaper alternative before launch';
+  r.observation.finished_on = '2026-11-26';
+  assert.deepEqual(validateExperiment(r, history).errors, []);
+  r.observation.spent_usd = 5;
+  assert.match(validateExperiment(r, history).errors.join('; '), /CANCELLED without an observed start/);
+});
+
+test('partial unknown running and cancelled costs do not vanish from known sums', () => {
+  const r = completed();
+  r.state = 'RUNNING';
+  r.observation.finished_on = null;
+  r.observation.owner_hours = null;
+  const c = completed();
+  c.state = 'CANCELLED';
+  c.cancellation_reason = 'Stopped after a day';
+  c.observation.spent_usd = null;
+  c.observation.owner_hours = 2;
+  const s = summarize([r, c]);
+  assert.equal(s.known_spent_usd, 9);
+  assert.equal(s.unknown_spend_records, 1);
+  assert.equal(s.total_spent_usd, null);
+  assert.equal(s.known_owner_hours, 2);
+  assert.equal(s.unknown_owner_hours_records, 1);
+  assert.equal(s.total_owner_hours, null);
 });
 
 test('unearned owner decisions and cancellations are rejected', () => {

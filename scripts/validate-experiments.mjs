@@ -82,9 +82,11 @@ export function validateExperiment(record, history, repoRoot = root) {
     if (o.started_on !== null || o.finished_on !== null || o.sample !== null || o.successes !== null || o.spent_usd !== null || o.owner_hours !== null || o.evidence?.length) {
       add('PLANNED must not imply any recorded execution or observations');
     }
-  } else if (record.state === 'RUNNING' || record.state === 'COMPLETED') {
-    if (a.status !== 'APPROVED') add('RUNNING and COMPLETED require explicit owner authorization');
-    if (!date(o.started_on)) add('RUNNING and COMPLETED require observation.started_on');
+  }
+  const cancelledExecution = record.state === 'CANCELLED' && o.started_on !== null;
+  if (record.state === 'RUNNING' || record.state === 'COMPLETED' || cancelledExecution) {
+    if (a.status !== 'APPROVED') add('recorded execution requires explicit owner authorization');
+    if (!date(o.started_on)) add('recorded execution requires a valid observation.started_on');
     if (date(o.started_on) && date(p.registered_on) && p.registered_on > o.started_on) add('plan must be registered before the observed start date');
     if (date(o.started_on) && date(a.approved_on) && a.approved_on > o.started_on) add('approval date cannot follow the observed start date');
     if (record.state === 'RUNNING' && o.finished_on !== null) add('RUNNING cannot have a finished_on date');
@@ -94,8 +96,12 @@ export function validateExperiment(record, history, repoRoot = root) {
     if (!Number.isInteger(o.sample) || o.sample < 0 || !Number.isInteger(o.successes) || o.successes < 0) add('COMPLETED requires measured sample and successes');
     if (!Array.isArray(o.evidence) || o.evidence.length === 0) add('COMPLETED requires at least one evidence reference');
   }
-  if (record.state === 'CANCELLED' && (!date(o.finished_on) || !text(record.cancellation_reason))) {
-    add('CANCELLED requires a date and explicit reason');
+  if (record.state === 'CANCELLED') {
+    if (!date(o.finished_on) || !text(record.cancellation_reason)) add('CANCELLED requires a date and explicit reason');
+    if (cancelledExecution && date(o.finished_on) && date(o.started_on) && o.finished_on < o.started_on) add('CANCELLED finish date cannot precede execution start');
+    if (!cancelledExecution && (o.sample !== null || o.successes !== null || o.spent_usd !== null || o.owner_hours !== null || o.evidence?.length)) {
+      add('CANCELLED without an observed start cannot report spending or field observations');
+    }
   }
 
   const d = record.owner_decision ?? {};
@@ -127,18 +133,27 @@ export function experimentResult(record) {
 export function summarize(records) {
   const completed = records.filter(x => x.state === 'COMPLETED');
   const measured = completed.filter(x => experimentResult(x) !== 'INCONCLUSIVE');
-  const allKnown = completed.every(x => nonnegative(x.observation.spent_usd) && nonnegative(x.observation.owner_hours));
+  // Running and cancelled work can incur real costs despite no evaluated outcome.
+  const executed = records.filter(x => ['RUNNING', 'COMPLETED'].includes(x.state) || (x.state === 'CANCELLED' && x.observation.started_on !== null));
+  const knownSpend = executed.filter(x => nonnegative(x.observation.spent_usd));
+  const knownHours = executed.filter(x => nonnegative(x.observation.owner_hours));
+  const sum = (items, field) => items.reduce((total, x) => total + x.observation[field], 0);
   return {
     records: records.length,
     planned: records.filter(x => x.state === 'PLANNED').length,
     running: records.filter(x => x.state === 'RUNNING').length,
     completed: completed.length,
+    executed_records: executed.length,
     evaluable: measured.length,
     passed_threshold: measured.filter(x => experimentResult(x) === 'MET_PREDECLARED_THRESHOLD').length,
     threshold_attainment_rate: measured.length ? measured.filter(x => experimentResult(x) === 'MET_PREDECLARED_THRESHOLD').length / measured.length : null,
-    total_spent_usd: completed.length && allKnown ? completed.reduce((sum, x) => sum + x.observation.spent_usd, 0) : null,
-    total_owner_hours: completed.length && allKnown ? completed.reduce((sum, x) => sum + x.observation.owner_hours, 0) : null,
-    note: 'Threshold attainment measures only evaluated experiments meeting their own predefined threshold; it is not first-pass yield, business success or owner approval. Null means unmeasured, not zero.'
+    known_spent_usd: executed.length ? sum(knownSpend, 'spent_usd') : null,
+    unknown_spend_records: executed.length - knownSpend.length,
+    total_spent_usd: executed.length && knownSpend.length === executed.length ? sum(knownSpend, 'spent_usd') : null,
+    known_owner_hours: executed.length ? sum(knownHours, 'owner_hours') : null,
+    unknown_owner_hours_records: executed.length - knownHours.length,
+    total_owner_hours: executed.length && knownHours.length === executed.length ? sum(knownHours, 'owner_hours') : null,
+    note: 'Threshold attainment is not first-pass yield, business success or owner approval. Known cost/time sums may be partial; full totals are null when an executed record is unknown.'
   };
 }
 
